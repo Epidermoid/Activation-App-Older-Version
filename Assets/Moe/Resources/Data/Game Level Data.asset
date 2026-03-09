@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65450d52a2731c4eba71288f4f2fdf9, type: 3}
+  m_Name: Game Level Data
+  m_EditorClassIdentifier: Assembly-CSharp::GameLevelData
+  data:
+  - catagoryName: Vuoksi
+    boardData:
+    - {fileID: 11400000, guid: 8c2eb7995605c3f4785cd6e02fce6b9f, type: 2}
+  - catagoryName: Kulttuuritalo
+    boardData:
+    - {fileID: 11400000, guid: 1317f07aedd77c841a858ec02ff368c3, type: 2}
+  - catagoryName: TerveysKeskus
+    boardData: []

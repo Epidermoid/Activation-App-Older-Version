@@ -1,0 +1,819 @@
+fileFormatVersion: 2
+guid: b13a0b365cc670a4f84f15ca5d5189b9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5089747977999763660
+    second: Hilighted_0
+  - first:
+      213: 2362932131515362859
+    second: Hilighted_1
+  - first:
+      213: -8575645606817603751
+    second: Hilighted_2
+  - first:
+      213: -1015913109295316444
+    second: Hilighted_3
+  - first:
+      213: -8146447149441899488
+    second: Hilighted_4
+  - first:
+      213: 6512604474581975313
+    second: Hilighted_5
+  - first:
+      213: 4369973717199995858
+    second: Hilighted_6
+  - first:
+      213: 2372928594288912252
+    second: Hilighted_7
+  - first:
+      213: -9081122116123844479
+    second: Hilighted_8
+  - first:
+      213: 4197235812864625128
+    second: Hilighted_9
+  - first:
+      213: -3513935625661525094
+    second: Hilighted_10
+  - first:
+      213: 5525956039076748742
+    second: Hilighted_11
+  - first:
+      213: 5892493341653945753
+    second: Hilighted_12
+  - first:
+      213: -3583336504231073163
+    second: Hilighted_13
+  - first:
+      213: -3737567760331738992
+    second: Hilighted_14
+  - first:
+      213: -8059844824845597246
+    second: Hilighted_15
+  - first:
+      213: -174324026017790322
+    second: Hilighted_16
+  - first:
+      213: 3691386103304222003
+    second: Hilighted_17
+  - first:
+      213: 1910209700481904812
+    second: Hilighted_18
+  - first:
+      213: 3585229424041866848
+    second: Hilighted_19
+  - first:
+      213: -942259686255971046
+    second: Hilighted_20
+  - first:
+      213: -6125515662024039454
+    second: Hilighted_21
+  - first:
+      213: -8218480013515825836
+    second: Hilighted_22
+  - first:
+      213: 9059222956960846551
+    second: Hilighted_23
+  - first:
+      213: 3172089419547254286
+    second: Hilighted_24
+  - first:
+      213: -6615103976781134788
+    second: Hilighted_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hilighted_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 581
+        width: 76
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc840f0c1da62a640800000000000000
+      internalID: 5089747977999763660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 578
+        width: 77
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e64571142dac020800000000000000
+      internalID: 2362932131515362859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_2
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 580
+        width: 76
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95f5ffd91cf2df880800000000000000
+      internalID: -8575645606817603751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_3
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 580
+        width: 76
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4224acdd860c6e1f0800000000000000
+      internalID: -1015913109295316444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_4
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 579
+        width: 80
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 024a504ba7102fe80800000000000000
+      internalID: -8146447149441899488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_5
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 579
+        width: 77
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 111041ea34b616a50800000000000000
+      internalID: 6512604474581975313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_6
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 454
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d3cf7351f345ac30800000000000000
+      internalID: 4369973717199995858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_7
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 454
+        width: 77
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7725f3fbf55ee020800000000000000
+      internalID: 2372928594288912252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_8
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 453
+        width: 80
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 180ae7a9c8f59f180800000000000000
+      internalID: -9081122116123844479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_9
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 454
+        width: 76
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e90850ebb39f3a30800000000000000
+      internalID: 4197235812864625128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_10
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 453
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a93dad48a2efb3fc0800000000000000
+      internalID: -3513935625661525094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_11
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 454
+        width: 79
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cd18916db320bc40800000000000000
+      internalID: 5525956039076748742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_12
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 329
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99d43a6797756c150800000000000000
+      internalID: 5892493341653945753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_13
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 327
+        width: 78
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57aed9a4f6e654ec0800000000000000
+      internalID: -3583336504231073163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_14
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 327
+        width: 76
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0907979aced712cc0800000000000000
+      internalID: -3737567760331738992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_15
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 330
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c5ce4ea5dda52090800000000000000
+      internalID: -8059844824845597246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_16
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 326
+        width: 79
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e86c461d83da49df0800000000000000
+      internalID: -174324026017790322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_17
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 327
+        width: 77
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 335f2486a107a3330800000000000000
+      internalID: 3691386103304222003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_18
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 203
+        width: 78
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca0bab31a9d628a10800000000000000
+      internalID: 1910209700481904812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_19
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 200
+        width: 79
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0663b427a2b41c130800000000000000
+      internalID: 3585229424041866848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_20
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 203
+        width: 78
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a15ba82cecb6ce2f0800000000000000
+      internalID: -942259686255971046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_21
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 202
+        width: 78
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e327f2b5fbcdfaa0800000000000000
+      internalID: -6125515662024039454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_22
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 203
+        width: 80
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45dddb898f712fd80800000000000000
+      internalID: -8218480013515825836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_23
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 203
+        width: 79
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d217b21843d8bd70800000000000000
+      internalID: 9059222956960846551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_24
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 74
+        width: 79
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e93e74586850c20800000000000000
+      internalID: 3172089419547254286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilighted_25
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 79
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c34cfaf3bfd6234a0800000000000000
+      internalID: -6615103976781134788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Hilighted_0: 5089747977999763660
+      Hilighted_1: 2362932131515362859
+      Hilighted_10: -3513935625661525094
+      Hilighted_11: 5525956039076748742
+      Hilighted_12: 5892493341653945753
+      Hilighted_13: -3583336504231073163
+      Hilighted_14: -3737567760331738992
+      Hilighted_15: -8059844824845597246
+      Hilighted_16: -174324026017790322
+      Hilighted_17: 3691386103304222003
+      Hilighted_18: 1910209700481904812
+      Hilighted_19: 3585229424041866848
+      Hilighted_2: -8575645606817603751
+      Hilighted_20: -942259686255971046
+      Hilighted_21: -6125515662024039454
+      Hilighted_22: -8218480013515825836
+      Hilighted_23: 9059222956960846551
+      Hilighted_24: 3172089419547254286
+      Hilighted_25: -6615103976781134788
+      Hilighted_3: -1015913109295316444
+      Hilighted_4: -8146447149441899488
+      Hilighted_5: 6512604474581975313
+      Hilighted_6: 4369973717199995858
+      Hilighted_7: 2372928594288912252
+      Hilighted_8: -9081122116123844479
+      Hilighted_9: 4197235812864625128
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

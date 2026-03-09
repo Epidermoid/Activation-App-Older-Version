@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bac32628ead30c4ebbd1343de091b56, type: 3}
+  m_Name: Kultturitalo
+  m_EditorClassIdentifier: Assembly-CSharp::BoardData
+  timeInSeconds: 0
+  Columns: 10
+  Rows: 10
+  Board:
+  - Size: 10
+    Row:
+    - O
+    - P
+    - P
+    - I
+    - A
+    - I
+    - O
+    - D
+    - I
+    - N
+  - Size: 10
+    Row:
+    - L
+    - Q
+    - P
+    - I
+    - K
+    - X
+    - C
+    - V
+    - U
+    - H
+  - Size: 10
+    Row:
+    - S
+    - M
+    - J
+    - V
+    - J
+    - H
+    - L
+    - C
+    - W
+    - F
+  - Size: 10
+    Row:
+    - C
+    - X
+    - Q
+    - T
+    - Y
+    - T
+    - D
+    - Z
+    - U
+    - S
+  - Size: 10
+    Row:
+    - A
+    - Q
+    - A
+    - P
+    - N
+    - N
+    - W
+    - M
+    - T
+    - J
+  - Size: 10
+    Row:
+    - O
+    - S
+    - A
+    - T
+    - F
+    - Z
+    - F
+    - Q
+    - O
+    - Z
+  - Size: 10
+    Row:
+    - D
+    - J
+    - L
+    - F
+    - M
+    - M
+    - X
+    - J
+    - M
+    - D
+  - Size: 10
+    Row:
+    - U
+    - K
+    - H
+    - M
+    - E
+    - L
+    - M
+    - Y
+    - W
+    - E
+  - Size: 10
+    Row:
+    - P
+    - J
+    - J
+    - R
+    - A
+    - G
+    - S
+    - T
+    - O
+    - T
+  - Size: 10
+    Row:
+    - B
+    - U
+    - X
+    - S
+    - J
+    - O
+    - D
+    - C
+    - G
+    - Z
+  SearchWords:
+  - Word: OPPIA
