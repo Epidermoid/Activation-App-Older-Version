@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Mapbox/Examples/0_PrefabScenes/Location-basedGame.unity
     guid: 42f6aa7ce7a604f16ade319663f46ceb
+  - enabled: 1
+    path: Assets/Niki/Scenes/LocationBased.unity
+    guid: cbbad29a7fbe71e45a7bb27d42c1f331
   m_configObjects: {}
