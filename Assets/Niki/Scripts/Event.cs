@@ -19,7 +19,7 @@ public class Event : MonoBehaviour
 
         menuManager.paikatButton();
 
-        // var infoTab = Instantiate(infoPrefab, GameObject.Find("Canvas").transform);
+        var infoTab = Instantiate(infoPrefab, GameObject.Find("PaikatList").transform);
     }
 
 
