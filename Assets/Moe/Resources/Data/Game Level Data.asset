@@ -15,7 +15,7 @@ MonoBehaviour:
   data:
   - catagoryName: Vuoksi
     boardData:
-    - {fileID: 11400000, guid: 8c2eb7995605c3f4785cd6e02fce6b9f, type: 2}
+    - {fileID: 11400000, guid: 398ae3b0d7ca0ca44b0b3be0db907f29, type: 2}
   - catagoryName: Kulttuuritalo
     boardData:
     - {fileID: 11400000, guid: 1317f07aedd77c841a858ec02ff368c3, type: 2}
