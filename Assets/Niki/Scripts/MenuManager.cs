@@ -10,6 +10,8 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject karttaBottomBar;
     [SerializeField] private GameObject paikatBottomBar;
 
+    [SerializeField] private GameObject infoPrefab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +23,19 @@ public class MenuManager : MonoBehaviour
     {
         karttaBottomBar.SetActive(true);
         paikatBottomBar.SetActive(false);
+        Destroy(GameObject.FindGameObjectWithTag("Info"));
 
         paikat.SetActive(false);
     }
+    public void karttaButtonNoDestroy()
+    {
+        karttaBottomBar.SetActive(true);
+        paikatBottomBar.SetActive(false);
+
+        paikat.SetActive(false);
+    }
+
+
 
     public void paikatButton()
     {
@@ -33,4 +45,9 @@ public class MenuManager : MonoBehaviour
         paikat.SetActive(true);
     }
 
+
+    public void OpenSchoolTemp()
+    {
+        var infoTab = Instantiate(infoPrefab, GameObject.Find("PaikatList").transform);
+    }
 }
