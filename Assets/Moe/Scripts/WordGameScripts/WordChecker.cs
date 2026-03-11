@@ -101,8 +101,19 @@ public class WordChecker : MonoBehaviour
                 GameEvents.CorrectWordMethod(_word, _correctSquareList);
                 _word = string.Empty;
                 _correctSquareList.Clear();
+                GiveScore();
                 return;
             }
+        }
+    }
+
+    //My implementation of winning situation
+    private void GiveScore()
+    {
+        _completeWords++;
+        if(_completeWords == currentGameData.selectedBoardData.SearchWords.Count)
+        {
+            Debug.Log("Your Score is : " + _completeWords + "/" + currentGameData.selectedBoardData.SearchWords.Count);
         }
     }
 

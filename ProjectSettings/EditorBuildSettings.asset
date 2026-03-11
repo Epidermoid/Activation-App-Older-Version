@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Niki/Scenes/LocationBased.unity
     guid: cbbad29a7fbe71e45a7bb27d42c1f331
+  - enabled: 1
+    path: Assets/Moe/Scenes/Button Test.unity
+    guid: 8b24275d66ad49f47ad44272fb32ee37
+  - enabled: 1
+    path: Assets/Moe/Scenes/Word.unity
+    guid: f8894de9750b67f4d971807a13da6088
+  - enabled: 1
+    path: Assets/Moe/Scenes/Quiz.unity
+    guid: 642e98bf668e9ee4d96e9be1ad74d7fa
   m_configObjects: {}
