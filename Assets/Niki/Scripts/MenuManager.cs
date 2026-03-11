@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using TMPro;
 using UnityEngine;
 
 public class MenuManager : MonoBehaviour
@@ -49,5 +50,17 @@ public class MenuManager : MonoBehaviour
     public void OpenSchoolTemp()
     {
         var infoTab = Instantiate(infoPrefab, GameObject.Find("PaikatList").transform);
+    }
+
+    public void SchoolRouteTemp()
+    {
+        var infoTab = Instantiate(infoPrefab, GameObject.Find("PaikatList").transform);
+        infoTab.gameObject.tag = "Active";
+        karttaButtonNoDestroy();
+
+        
+        var directions = Instantiate(infoTab.GetComponent<EventInfo>().dir, GameObject.Find("DirSpot").transform);
+
+        directions.gameObject.transform.Find("Title").GetComponent<TextMeshProUGUI>().text = infoTab.GetComponent<EventInfo>().title.text;
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EventInfo : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI title;
+    [SerializeField] public TextMeshProUGUI title;
     [SerializeField] private string wantedTitle;
 
     [SerializeField] private TextMeshProUGUI basicInfo;
@@ -16,6 +16,9 @@ public class EventInfo : MonoBehaviour
     [SerializeField] private string wantedInfo;
 
     [SerializeField] private TextMeshProUGUI meters;
+
+
+    [SerializeField] public GameObject dir;
 
     private MenuManager menuManager;
 
@@ -38,5 +41,9 @@ public class EventInfo : MonoBehaviour
     {
         gameObject.tag = "Active";
         menuManager.karttaButtonNoDestroy();
+
+        var directions = Instantiate(dir, GameObject.Find("DirSpot").transform);
+
+        directions.gameObject.transform.Find("Title").GetComponent<TextMeshProUGUI>().text = title.text;
     }
 }
