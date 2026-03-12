@@ -5,7 +5,7 @@ public class SearchingWordsList : MonoBehaviour
 {
     public GameData currentGameData;
     public GameObject searchingWordPrefab;
-    public float offset = 0.0f;
+    public float offset;
     public int maxColumns = 5;
     public int maxRows = 4;
 

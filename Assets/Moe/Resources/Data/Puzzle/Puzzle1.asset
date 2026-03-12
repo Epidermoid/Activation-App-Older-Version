@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Puzzle1
   m_EditorClassIdentifier: Assembly-CSharp::BoardData
   timeInSeconds: 0
-  Columns: 8
+  Columns: 7
   Rows: 10
   Board:
   - Size: 10
@@ -24,94 +24,82 @@ MonoBehaviour:
     - M
     - E
     - R
-    - I
-    - C
-    - K
-    - H
-  - Size: 10
-    Row:
-    - W
-    - D
-    - E
-    - O
     - G
-    - Q
-    - B
-    - O
-    - Q
-    - O
-  - Size: 10
-    Row:
-    - I
-    - R
-    - "\xD6"
-    - N
     - "\xC4"
-    - W
-    - R
-    - M
-    - C
-    - I
-  - Size: 10
-    Row:
-    - N
-    - Q
-    - U
-    - S
     - Y
-    - V
-    - "\xC4"
-    - P
-    - V
-    - O
+    - R
   - Size: 10
     Row:
+    - G
     - T
-    - V
-    - R
+    - I
+    - E
     - W
-    - C
+    - H
+    - B
+    - S
+    - W
+    - N
+  - Size: 10
+    Row:
+    - X
+    - L
+    - R
     - Z
+    - I
+    - K
+    - R
+    - X
     - T
-    - U
-    - T
+    - Z
+  - Size: 10
+    Row:
+    - V
+    - O
+    - "\xD6"
+    - Z
+    - N
+    - H
+    - "\xC4"
+    - W
+    - F
     - X
   - Size: 10
     Row:
-    - E
+    - P
+    - P
+    - N
+    - H
+    - T
+    - L
+    - Y
     - K
-    - Z
-    - T
-    - O
     - M
-    - B
-    - T
-    - R
-    - Y
-  - Size: 10
-    Row:
-    - R
-    - B
-    - T
-    - Y
-    - R
-    - N
-    - R
-    - E
-    - M
-    - J
-  - Size: 10
-    Row:
-    - R
-    - A
-    - Z
     - G
-    - S
-    - U
-    - N
-    - R
-    - M
+  - Size: 10
+    Row:
+    - T
+    - E
     - Q
+    - L
+    - E
+    - E
+    - H
+    - Z
+    - P
+    - R
+  - Size: 10
+    Row:
+    - K
+    - X
+    - R
+    - W
+    - R
+    - U
+    - F
+    - U
+    - S
+    - H
   SearchWords:
   - Word: SUMMER
   - Word: WINTER
@@ -120,5 +108,3 @@ MonoBehaviour:
   - Word: "G\xC4Y"
   - Word: "BR\xC4T"
   - Word: "IR\xD6N"
-  - Word: COMPUTER
-  - Word: SUMMER
