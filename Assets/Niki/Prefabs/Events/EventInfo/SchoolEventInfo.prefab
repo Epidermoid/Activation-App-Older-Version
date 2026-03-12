@@ -74,8 +74,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4289813321
-  m_fontColor: {r: 0.28627452, g: 0.35686275, b: 0.69411767, a: 1}
+    rgba: 4288894498
+  m_fontColor: {r: 0.13333334, g: 0.3372549, b: 0.6392157, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -479,8 +479,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4289813321
-  m_fontColor: {r: 0.28627452, g: 0.35686275, b: 0.69411767, a: 1}
+    rgba: 4288894498
+  m_fontColor: {r: 0.13333334, g: 0.3372549, b: 0.6392157, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -954,8 +954,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4289813321
-  m_fontColor: {r: 0.28627452, g: 0.35686275, b: 0.69411767, a: 1}
+    rgba: 4288894498
+  m_fontColor: {r: 0.13333334, g: 0.3372549, b: 0.6392157, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1109,6 +1109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52948d6470c100b449727913495e8e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linkedMarker: {fileID: 2147350033808795455, guid: 1f32c93719427c549a8714079ad57ad1, type: 3}
   title: {fileID: 5946324076684187575}
   wantedTitle: Vuoksi
   basicInfo: {fileID: 6844211421843635316}
