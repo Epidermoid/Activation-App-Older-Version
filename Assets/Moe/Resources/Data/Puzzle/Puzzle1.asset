@@ -18,104 +18,103 @@ MonoBehaviour:
   Board:
   - Size: 10
     Row:
-    - F
-    - C
-    - W
-    - I
-    - W
-    - Q
-    - A
-    - Y
-    - K
-    - O
-  - Size: 10
-    Row:
-    - L
-    - B
-    - G
-    - P
-    - F
-    - E
-    - M
-    - F
-    - P
+    - S
     - U
+    - M
+    - M
+    - E
+    - R
+    - I
+    - C
+    - K
+    - H
   - Size: 10
     Row:
-    - Q
+    - W
+    - D
+    - E
+    - O
     - G
-    - I
-    - V
+    - Q
     - B
     - O
-    - W
-    - V
-    - V
+    - Q
+    - O
+  - Size: 10
+    Row:
+    - I
+    - R
+    - "\xD6"
     - N
+    - "\xC4"
+    - W
+    - R
+    - M
+    - C
+    - I
+  - Size: 10
+    Row:
+    - N
+    - Q
+    - U
+    - S
+    - Y
+    - V
+    - "\xC4"
+    - P
+    - V
+    - O
+  - Size: 10
+    Row:
+    - T
+    - V
+    - R
+    - W
+    - C
+    - Z
+    - T
+    - U
+    - T
+    - X
   - Size: 10
     Row:
     - E
+    - K
     - Z
-    - D
-    - S
-    - W
-    - N
+    - T
     - O
-    - N
-    - S
-    - C
-  - Size: 10
-    Row:
-    - F
-    - S
-    - W
-    - J
-    - J
-    - A
-    - D
-    - C
-    - Y
-    - J
-  - Size: 10
-    Row:
-    - C
-    - L
-    - J
-    - H
-    - L
+    - M
+    - B
     - T
     - R
-    - V
-    - V
-    - H
+    - Y
   - Size: 10
     Row:
-    - F
-    - Y
-    - P
-    - Y
-    - M
-    - L
-    - K
     - R
+    - B
+    - T
+    - Y
+    - R
+    - N
+    - R
+    - E
+    - M
+    - J
+  - Size: 10
+    Row:
+    - R
+    - A
+    - Z
+    - G
     - S
     - U
-  - Size: 10
-    Row:
-    - F
     - N
-    - J
-    - Z
-    - O
-    - Z
+    - R
     - M
-    - L
-    - H
-    - Y
+    - Q
   SearchWords:
   - Word: SUMMER
   - Word: WINTER
-  - Word: HOMOSEXUAL
   - Word: ME
   - Word: WTF
   - Word: "G\xC4Y"
