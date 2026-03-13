@@ -71,8 +71,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 903699430460902995}
   - {fileID: 4696831917894830878}
@@ -93,7 +93,7 @@ MonoBehaviour:
   _map: {fileID: 0}
   MeshModifiers:
   - {fileID: 11400000, guid: d31b2cb2a75a54d5bb6402fe0bd8c6cf, type: 2}
-  _material: {fileID: 2100000, guid: e0bfe3cfa81722b45b4e6dc05a9e467c, type: 2}
+  _material: {fileID: 2100000, guid: cb1178381699b824182736272de7f8fc, type: 2}
   _waypoints:
   - {fileID: 903699430460902995}
   - {fileID: 4696831917894830878}

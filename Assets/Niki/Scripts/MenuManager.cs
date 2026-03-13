@@ -20,12 +20,6 @@ public class MenuManager : MonoBehaviour
 
     public GameObject activeObject;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
 
     public void karttaButton()
     {

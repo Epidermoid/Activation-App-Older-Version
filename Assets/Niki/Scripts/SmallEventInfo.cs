@@ -10,6 +10,8 @@ public class SmallEventInfo : MonoBehaviour
 
     private MenuManager menuManager;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,5 +35,10 @@ public class SmallEventInfo : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         eInfo.GoButton();
         Debug.Log(":)");
+    }
+
+    public void OpenBigInfo()
+    {
+        var bigInfo = Instantiate(linkedInfo, GameObject.Find("PaikatList").transform);
     }
 }
