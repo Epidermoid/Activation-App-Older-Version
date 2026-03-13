@@ -12,6 +12,10 @@ public class QuizManager : MonoBehaviour
     public GameObject[] options;
     public int currentQuestion;
 
+    [SerializeField] private QuizGameData quizGamesData; // Reference to the ScriptableObject containing quiz data
+    [SerializeField] private List<QuizGameData.QuizData> currentQuizData; // List to hold the quiz data for the selected category
+    public int currentQuizIndex; // Index to track the current category
+
     public TMPro.TextMeshProUGUI QuestionText;
     public TextMeshProUGUI scoreText;
 
