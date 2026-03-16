@@ -11,6 +11,7 @@ public class Directions : MonoBehaviour
     {
         menuManager = GameObject.Find("Canvas").GetComponent<MenuManager>();
 
+        //finds the player and the wanted destination and sets the direction checks as their children
         if (gameObject.name == "Dir1")
         {
             gameObject.transform.parent = GameObject.Find("PlayerTarget").transform;

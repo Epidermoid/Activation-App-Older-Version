@@ -7,7 +7,7 @@ public class LookAtBillboarding : MonoBehaviour
     private Transform myTransform;
     private GameObject cameraOb;
 
-    // Start is called before the first frame update
+    // Makes the object face the camera, but badly
     void Start()
     {
         myTransform = GetComponent<Transform>();

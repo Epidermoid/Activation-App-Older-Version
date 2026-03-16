@@ -29,6 +29,7 @@ public class SmallEventInfo : MonoBehaviour
 
     IEnumerator wait()
     {
+        // no idea why it needs the slight delay to work, but it does
         var curInfo = Instantiate(linkedInfo, GameObject.Find("PaikatList").transform);
 
         var eInfo = curInfo.GetComponent<EventInfo>();

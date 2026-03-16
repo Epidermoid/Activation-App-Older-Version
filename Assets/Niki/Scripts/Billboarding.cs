@@ -9,7 +9,7 @@ public class Billboarding : MonoBehaviour
     private GameObject cameraOb;
     private Transform cameraTransform;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // Makes the object face the camera
     void Start()
     {
         myTransform = GetComponent<Transform>();

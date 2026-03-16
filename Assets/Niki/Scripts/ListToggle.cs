@@ -13,6 +13,7 @@ public class ListToggle : MonoBehaviour
 
     public void Toggle()
     {
+        // the toggle in lists. the button itself is invisible
         if (!toggle)
         {
             foreach (GameObject obj in objects)

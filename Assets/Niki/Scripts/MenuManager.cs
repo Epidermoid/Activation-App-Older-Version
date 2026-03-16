@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MenuManager : MonoBehaviour
@@ -11,8 +12,6 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject karttaBottomBar;
     [SerializeField] private GameObject paikatBottomBar;
 
-    [SerializeField] private GameObject infoPrefab;
-
     public GameObject dirTarget;
 
     [SerializeField] private GameObject directions;
@@ -20,6 +19,13 @@ public class MenuManager : MonoBehaviour
 
     public GameObject activeObject;
 
+    [SerializeField] private GameObject profilePage;
+
+    private void Start()
+    {
+        // Lowers the map so that the directions line doesn't flicker
+        GameObject.Find("Map").transform.position = new Vector3(0f, -0.1f, 0f);
+    }
 
     public void karttaButton()
     {
@@ -48,23 +54,7 @@ public class MenuManager : MonoBehaviour
     }
 
 
-    public void OpenSchoolTemp()
-    {
-        var infoTab = Instantiate(infoPrefab, GameObject.Find("PaikatList").transform);
-    }
 
-    public void SchoolRouteTemp()
-    {
-        var infoTab = Instantiate(infoPrefab, GameObject.Find("PaikatList").transform);
-        infoTab.gameObject.tag = "Active";
-        
-        karttaButtonNoDestroy();
-
-        
-        var directions = Instantiate(infoTab.GetComponent<EventInfo>().dir, GameObject.Find("DirSpot").transform);
-
-        directions.gameObject.transform.Find("Title").GetComponent<TextMeshProUGUI>().text = infoTab.GetComponent<EventInfo>().title.text;
-    }
 
     public void Route()
     {
@@ -75,15 +65,29 @@ public class MenuManager : MonoBehaviour
     public void CancelRoute()
     {
         cancelRouteButton.SetActive(false);
+
+        // finds the direction waypoints and destroys them
         GameObject[] dirArr = GameObject.FindGameObjectsWithTag("Directions");
-        
         foreach (var dir in dirArr)
         {
             Destroy(dir);
         }
 
+        // finds the direction line and destroys it
         Destroy(GameObject.Find("direction waypoint  entity"));
 
+        // destroys the big info in paikat
         Destroy(activeObject);
     }
+
+    public void OpenProfile()
+    {
+        profilePage.SetActive(true);
+    }
+
+    public void CloseProfile()
+    {
+        profilePage.SetActive(false);
+    }
+
 }

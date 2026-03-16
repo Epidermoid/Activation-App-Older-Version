@@ -15,7 +15,7 @@ public class Event : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("Clicked");
+        
 
         menuManager.paikatButton();
 
