@@ -616,7 +616,7 @@ GameObject:
   - component: {fileID: 546236355}
   - component: {fileID: 546236354}
   - component: {fileID: 546236353}
-  - component: {fileID: 546236352}
+  - component: {fileID: 546236356}
   m_Layer: 5
   m_Name: Vuoksi
   m_TagString: Untagged
@@ -645,22 +645,6 @@ RectTransform:
   m_AnchoredPosition: {x: 21, y: 399}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &546236352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 546236350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05877fc0c91a95e48a12db8468d4b6c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameData: {fileID: 11400000, guid: 73282239ff55ff44288466b1bcd8a4af, type: 2}
-  levelData: {fileID: 11400000, guid: ae976b0fa74b84c458f0b686b69dbc92, type: 2}
-  catagoryText: {fileID: 427318142}
-  progressBarFilling: {fileID: 1910796476}
 --- !u!114 &546236353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -704,7 +688,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 546236354}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 546236356}
+        m_TargetAssemblyTypeName: SelectQuizButton, Assembly-CSharp
+        m_MethodName: OnCatagoryButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &546236354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -743,6 +739,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546236350}
   m_CullTransparentMesh: 1
+--- !u!114 &546236356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546236350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c2924bbcdcfa94e8b852ae231f8776, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quizData: {fileID: 11400000, guid: 1584ef1f7abe7a0448bce667cda4b1d0, type: 2}
+  buttonObject: {fileID: 546236350}
 --- !u!1 &661386607
 GameObject:
   m_ObjectHideFlags: 0

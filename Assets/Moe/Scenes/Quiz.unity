@@ -885,6 +885,10 @@ MonoBehaviour:
   - {fileID: 1047834226}
   - {fileID: 1991007249}
   currentQuestion: 0
+  catagory: 
+  quizGamesData: {fileID: 11400000, guid: 1584ef1f7abe7a0448bce667cda4b1d0, type: 2}
+  currentQuizData: []
+  currentQuizIndex: 0
   QuestionText: {fileID: 266980187}
   scoreText: {fileID: 1546209200}
   QuizPanel: {fileID: 543141566}

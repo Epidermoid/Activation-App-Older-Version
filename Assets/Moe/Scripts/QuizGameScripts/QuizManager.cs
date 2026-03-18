@@ -12,6 +12,9 @@ public class QuizManager : MonoBehaviour
     public GameObject[] options;
     public int currentQuestion;
 
+
+    public string catagory; // The category of the quiz game
+    public static string SelectedCategory;
     [SerializeField] private QuizGameData quizGamesData; // Reference to the ScriptableObject containing quiz data
     [SerializeField] private List<QuizGameData.QuizData> currentQuizData; // List to hold the quiz data for the selected category
     public int currentQuizIndex; // Index to track the current category
@@ -37,6 +40,21 @@ public class QuizManager : MonoBehaviour
         }
     }
 
+    
+
+    void LoadCategory()
+    {
+        foreach (var cat in quizGamesData.data)
+        {
+            if (cat.catagoryName == catagory)
+            {
+                currentQuizData = new List<QuizGameData.QuizData>(cat.quizData);
+                return;
+            }
+        }
+
+        Debug.LogError("Category not found: " + catagory);
+    }
     public void Retry()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -50,7 +68,9 @@ public class QuizManager : MonoBehaviour
 
     private void Start()
     {
-      totalQuestions = QnA.Count;
+        catagory = SelectedCategory;
+        LoadCategory();
+        totalQuestions = currentQuizData.Count;
       GoPanel.SetActive(false);
       QuizPanel.SetActive(true);
       GenerateQuestion();
@@ -59,13 +79,13 @@ public class QuizManager : MonoBehaviour
     public void Correct()
     {
         score++;
-        QnA.RemoveAt(currentQuestion);
+        currentQuizData.RemoveAt(currentQuestion);
         GenerateQuestion();
     }
 
     public void Wrong()
     {
-        QnA.RemoveAt(currentQuestion);
+        currentQuizData.RemoveAt(currentQuestion);
         GenerateQuestion();
     }
 
@@ -74,20 +94,20 @@ public class QuizManager : MonoBehaviour
         for(int i= 0; i< options.Length; i++)
         {
             options[i].GetComponent<AnswerScript>().isCorrect = false;
-            options[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = QnA[currentQuestion].Answers[i];
+            options[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = currentQuizData[currentQuestion].answers[i];
 
-            if (QnA[currentQuestion].CorrectAnswer == i + 1)
+            if (currentQuizData[currentQuestion].answerIndex == i + 1)
             {
-                options[i].GetComponent <AnswerScript>().isCorrect = true;
+                options[i].GetComponent<AnswerScript>().isCorrect = true;
             }
         }
     }
     void GenerateQuestion()
     {
-        if(QnA.Count > 0)
+        if(currentQuizData.Count > 0)
         {
-            currentQuestion = Random.Range(0, QnA.Count);
-            QuestionText.text = QnA[currentQuestion].Question;
+            currentQuestion = Random.Range(0, currentQuizData.Count);
+            QuestionText.text = currentQuizData[currentQuestion].question;
             SetAnswer();
         }
         else
