@@ -7,7 +7,7 @@ public class LookAtBillboarding : MonoBehaviour
     private Transform myTransform;
     private GameObject cameraOb;
 
-    // Makes the object face the camera, but badly
+    // Makes the object face the camera, but badly. not used
     void Start()
     {
         myTransform = GetComponent<Transform>();

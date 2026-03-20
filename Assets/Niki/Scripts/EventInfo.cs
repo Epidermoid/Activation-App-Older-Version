@@ -43,10 +43,11 @@ public class EventInfo : MonoBehaviour
 
     public void GoButton()
     {
-        
+        // Changes the objects tag from info to active so that it's not destroyed by closing the paikat menu
         gameObject.tag = "Active";
         menuManager.karttaButtonNoDestroy();
 
+        // instatiates the UI element that tells you where you are going
         var directions = Instantiate(dir, GameObject.Find("DirSpot").transform);
 
         directions.gameObject.transform.Find("Title").GetComponent<TextMeshProUGUI>().text = title.text;

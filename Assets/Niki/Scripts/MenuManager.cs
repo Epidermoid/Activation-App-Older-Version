@@ -21,6 +21,10 @@ public class MenuManager : MonoBehaviour
 
     [SerializeField] private GameObject profilePage;
 
+    [SerializeField] private GameObject characterBottomBar;
+    [SerializeField] private GameObject advancementsBottomBar;
+    [SerializeField] private GameObject characterBackground;
+
     private void Start()
     {
         // Lowers the map so that the directions line doesn't flicker
@@ -78,6 +82,8 @@ public class MenuManager : MonoBehaviour
 
         // destroys the big info in paikat
         Destroy(activeObject);
+
+        Destroy(GameObject.Find("DirectionsInfo(Clone)"));
     }
 
     public void OpenProfile()
@@ -88,6 +94,20 @@ public class MenuManager : MonoBehaviour
     public void CloseProfile()
     {
         profilePage.SetActive(false);
+        OpenCharacterPage();
     }
 
+    public void OpenCharacterPage()
+    {
+        characterBackground.SetActive(true);
+        characterBottomBar.SetActive(true);
+        advancementsBottomBar.SetActive(false);
+    }
+
+    public void OpenAdvancementsPage()
+    {
+        characterBackground.SetActive(false);
+        characterBottomBar.SetActive(false);
+        advancementsBottomBar.SetActive(true);
+    }
 }
