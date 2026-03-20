@@ -11,6 +11,7 @@ public class GameLevelData : ScriptableObject
     public struct CatagoryRecord
     {
         public string catagoryName;
+        public bool itsBadge;
         public List<BoardData> boardData;
     }
    

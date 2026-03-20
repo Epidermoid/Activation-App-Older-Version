@@ -717,6 +717,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentGameData: {fileID: 11400000, guid: 73282239ff55ff44288466b1bcd8a4af, type: 2}
+  _GameLeveData: {fileID: 11400000, guid: ae976b0fa74b84c458f0b686b69dbc92, type: 2}
 --- !u!1 &813814380
 GameObject:
   m_ObjectHideFlags: 0

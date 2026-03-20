@@ -6,6 +6,7 @@ using static GameEvents;
 public class WordChecker : MonoBehaviour
 {
     public GameData currentGameData;
+    public GameLevelData _GameLeveData;
 
     private string _word;
 
@@ -114,6 +115,19 @@ public class WordChecker : MonoBehaviour
         if(_completeWords == currentGameData.selectedBoardData.SearchWords.Count)
         {
             Debug.Log("Your Score is : " + _completeWords + "/" + currentGameData.selectedBoardData.SearchWords.Count);
+
+            for (int i = 0; i < _GameLeveData.data.Count; i++)
+            {
+                if (_GameLeveData.data[i].catagoryName == currentGameData.selectedCatagoryName)
+                {
+                    var temp = _GameLeveData.data[i];
+                    temp.itsBadge = true;
+                    _GameLeveData.data[i] = temp;
+
+                    Debug.Log("Badge unlocked for category: " + currentGameData.selectedCatagoryName);
+                    break;
+                }
+            }
         }
     }
 

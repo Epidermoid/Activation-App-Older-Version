@@ -64,6 +64,16 @@ public class QuizManager : MonoBehaviour
         QuizPanel.SetActive(false);
         GoPanel.SetActive(true);
         scoreText.text = score + "/" + totalQuestions;
+
+        foreach(var cat in quizGamesData.data)
+        {
+            if (cat.catagoryName == catagory)
+            {
+                cat.itsBadge = true;
+                Debug.Log("Badge unlocked for category: " + catagory);
+                break;
+            }
+        }
     }
 
     private void Start()

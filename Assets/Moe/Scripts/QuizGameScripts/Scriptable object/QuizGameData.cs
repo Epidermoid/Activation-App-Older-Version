@@ -18,6 +18,7 @@ public class QuizGameData : ScriptableObject
     public class CatagoryData
     {
         public string catagoryName;
+        public bool itsBadge;
         public List<QuizData> quizData;
     }
 
