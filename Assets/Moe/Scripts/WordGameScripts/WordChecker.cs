@@ -18,6 +18,8 @@ public class WordChecker : MonoBehaviour
     private Ray _rayDiagonalRightUp, _rayDiagonalRightDown;
     private Ray _currentRay = new Ray();
     private Vector3 _rayStartPosition;
+    private Vector2 _lastSelectedPosition;
+    private Vector2 _direction;
     private List<int> _correctSquareList = new List<int>();
 
     private void OnEnable()
@@ -56,9 +58,12 @@ public class WordChecker : MonoBehaviour
 
     private void SquareSelected(string letter, Vector3 squarePosition, int squareIndex)
     {
-        if(_assignedPoints == 0)
+        Vector2 currentPos = new Vector2(squarePosition.x, squarePosition.y);
+
+        if (_assignedPoints == 0)
         {
             _rayStartPosition = squarePosition;
+            _lastSelectedPosition = currentPos;
             _correctSquareList.Add(squareIndex);
             _word += letter;
 
@@ -73,19 +78,24 @@ public class WordChecker : MonoBehaviour
         }
         else if(_assignedPoints == 1)
         {
+            //check adjacency BEFORE accepting
+            if (Vector2.Distance(currentPos, _lastSelectedPosition) > 1.5f)
+                return;
             _correctSquareList.Add(squareIndex);
             _currentRay = SelectRay(_rayStartPosition, squarePosition);
             GameEvents.SelectSquareMethod(squarePosition);
             _word += letter;
+            _lastSelectedPosition = currentPos;
             CheckWord();
         }
         else
         {
-            if(IsPointOnTheRay(_currentRay, squarePosition))
+            if (IsPointOnTheRay(_currentRay, squarePosition) && Vector2.Distance(currentPos, _lastSelectedPosition) < 1.5f)
             {
                 _correctSquareList.Add(squareIndex);
                 GameEvents.SelectSquareMethod(squarePosition);
                 _word += letter;
+                _lastSelectedPosition = currentPos;
                 CheckWord();
             }
         }

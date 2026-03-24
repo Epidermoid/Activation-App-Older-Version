@@ -10,7 +10,7 @@ public class WordsGrid : MonoBehaviour
     public GameObject gridSquarePrefab;
     public AlphabetData alphabetData;
 
-    public float squareOffset = 0.0f;
+    private float squareOffset = 0.3f;
     public float topPosition;
 
     private List<GameObject> _squareList = new List<GameObject>();
@@ -28,8 +28,8 @@ public class WordsGrid : MonoBehaviour
 
         var offset = new Vector3
         {
-            x = (squareRect.width * squareTransform.localScale.x + squareOffset) * 0.01f,
-            y = (squareRect.height * squareTransform.localScale.y + squareOffset) * 0.01f
+            x = (squareRect.width * squareTransform.localScale.x * 0.01f) + squareOffset,
+            y = (squareRect.height * squareTransform.localScale.y * 0.01f) + squareOffset
         };
 
         var startPosition = GetFirstSquarePosition();
@@ -62,8 +62,8 @@ public class WordsGrid : MonoBehaviour
         squareSize.x = squareRect.width * squareTransform.localScale.x;
         squareSize.y = squareRect.height * squareTransform.localScale.y;
 
-        var midWidthPosition = (((currentGameData.selectedBoardData.Columns - 1) * squareSize.x)/2) * 0.01f;
-        var midWidthHeight = (((currentGameData.selectedBoardData.Rows -1) * squareSize.y) / 2) * 0.01f;
+        var midWidthPosition = (((currentGameData.selectedBoardData.Columns - 1) * (squareRect.width * squareTransform.localScale.x * 0.01f + squareOffset)) / 2f);
+        var midWidthHeight = (((currentGameData.selectedBoardData.Rows -1) * (squareRect.height * squareTransform.localScale.y * 0.01f + squareOffset)) / 2f);
 
         startPosition.x = (midWidthPosition != 0) ? midWidthPosition * -1 : midWidthPosition;
         startPosition.y += midWidthHeight;
