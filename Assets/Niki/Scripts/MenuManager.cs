@@ -25,6 +25,11 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject advancementsBottomBar;
     [SerializeField] private GameObject characterBackground;
 
+    [SerializeField] private GameObject placeSettings;
+    private bool placeSettingsOpen = false;
+
+    
+
     private void Start()
     {
         // Lowers the map so that the directions line doesn't flicker
@@ -109,5 +114,31 @@ public class MenuManager : MonoBehaviour
         characterBackground.SetActive(false);
         characterBottomBar.SetActive(false);
         advancementsBottomBar.SetActive(true);
+    }
+
+    public void OpenPlaceSettings()
+    {
+        if (placeSettingsOpen == false)
+        {
+            placeSettingsOpen = true;
+            placeSettings.SetActive(true);
+        }
+        else if (placeSettingsOpen == true)
+        {
+            placeSettingsOpen = false;
+            placeSettings.SetActive(false);
+        }
+    }
+
+    public void PlaceToggle(GameObject wanted)
+    {
+        if (!wanted.activeSelf)
+        {
+            wanted.SetActive(true);
+        }
+        else if (wanted.activeSelf)
+        {
+            wanted.SetActive(false);
+        }
     }
 }
