@@ -2,17 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CardGameData : MonoBehaviour
+
+[System.Serializable]
+[CreateAssetMenu]
+public class CardGameData : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
+    [System.Serializable]
+    public class CardData
     {
-        
+        public Sprite cardSprite;
     }
 
-    // Update is called once per frame
-    void Update()
+    [System.Serializable]
+    public class ThemeData
     {
-        
+        public string themeName;
+        public List<CardData> cards;
     }
+
+    public List<ThemeData> themes;
 }
