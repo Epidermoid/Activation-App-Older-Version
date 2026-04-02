@@ -43,6 +43,8 @@ public class MenuManager : MonoBehaviour
         Destroy(GameObject.FindGameObjectWithTag("Info"));
 
         paikat.SetActive(false);
+        placeSettingsOpen = false;
+        placeSettings.SetActive(false);
     }
     public void karttaButtonNoDestroy()
     {
