@@ -9,6 +9,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43a67e38ed882f34d86e0a237d2f7b31, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c262e3931c01524cb60eec210f995ea, type: 3}
   m_Name: Card Game Data
   m_EditorClassIdentifier: 
+  categories:
+  - categoryName: Blue
+    unlocked: 0
+    cardPairs: []
+  - categoryName: Road
+    unlocked: 0
+    cardPairs:
+    - firstSprite: {fileID: 21300000, guid: 5799aae8957a02e46a796cda2566ac02, type: 3}
+      secondSprite: {fileID: 21300000, guid: 5799aae8957a02e46a796cda2566ac02, type: 3}
+    - firstSprite: {fileID: 21300000, guid: c9e28e7389804a84d8e7f54b9a2ab4fb, type: 3}
+      secondSprite: {fileID: 21300000, guid: c9e28e7389804a84d8e7f54b9a2ab4fb, type: 3}
+    - firstSprite: {fileID: 21300000, guid: c6ab4210787f36444a1fb76a8a8384a2, type: 3}
+      secondSprite: {fileID: 21300000, guid: c6ab4210787f36444a1fb76a8a8384a2, type: 3}

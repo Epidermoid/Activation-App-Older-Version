@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using PrimeTween;
@@ -7,10 +5,13 @@ using PrimeTween;
 public class Card : MonoBehaviour
 {
     [SerializeField] private Image iconImage;
+
     public Sprite hiddenIconSprite;
     public Sprite iconSprite;
 
+    public int pairID;
     public bool isSelected;
+    public bool isMatched; // <-- Added to track matched cards
 
     public CardController controller;
 
@@ -21,29 +22,34 @@ public class Card : MonoBehaviour
 
     public void SetIconSprite(Sprite sp)
     {
-               iconSprite = sp;
+        iconSprite = sp;
+        iconImage.sprite = hiddenIconSprite; // ensure hidden at start
     }
 
     public void Show()
     {
-        Tween.Rotation(transform, //the target
-            new Vector3(0f, 180f, 0f), //180 in y axis
-            0.2f); // in 0.2 seconds
-
-        Tween.Delay(0.1f,()=> iconImage.sprite = iconSprite);
         isSelected = true;
+
+        Tween.Rotation(transform,
+            new Vector3(0f, 180f, 0f),
+            0.2f);
+
+        Tween.Delay(0.1f, () =>
+        {
+            iconImage.sprite = iconSprite;
+        });
     }
 
     public void Hide()
     {
-        Tween.Rotation(transform, //the target
-           new Vector3(0f, 0f, 0f), //180 in y axis
-           0.2f); // in 0.2 seconds
+        Tween.Rotation(transform,
+            new Vector3(0f, 0f, 0f),
+            0.2f);
 
         Tween.Delay(0.1f, () =>
         {
-        iconImage.sprite = hiddenIconSprite;
-        isSelected = false;
-    });
+            iconImage.sprite = hiddenIconSprite;
+            isSelected = false;
+        });
     }
 }

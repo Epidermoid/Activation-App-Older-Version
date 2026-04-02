@@ -1,90 +1,161 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class CardController : MonoBehaviour
 {
-    [SerializeField]Card cardPrefab;
-    [SerializeField] Transform gridTransform;
-    [SerializeField]Sprite[] sprites;
-    private List<Sprite> spritePairs;
+    [Header("Prefabs & Grid")]
+    [SerializeField] private Card cardPrefab;
+    [SerializeField] private Transform gridTransform;
 
-    Card firstSelected;
-    Card secondSelected;
+    [Header("Game Data")]
+    [SerializeField] private CardGameData cardGameData;
 
+    // Selected category set by the category button
+    public static string SelectedCategory;
+
+    private int totalPairs;
+    private int matchedPairs = 0;
+
+    private List<CardData> cardDataList;
+
+    private Card firstSelected;
+    private Card secondSelected;
+
+    private bool isChecking = false;
 
     private void Start()
     {
-        PrepareSprites();
+        LoadCategory(SelectedCategory);
         CreateCards();
     }
-    private void PrepareSprites()
-    {
-        spritePairs = new List<Sprite>();
-        for(int i = 0; i < sprites.Length; i++)
-        {
-            spritePairs.Add(sprites[i]);
-            spritePairs.Add(sprites[i]);
-        }
 
-        ShuffleSprites(spritePairs);
+    // Internal data structure for gameplay
+    private class CardData
+    {
+        public Sprite sprite;
+        public int pairID;
+
+        public CardData(Sprite sprite, int pairID)
+        {
+            this.sprite = sprite;
+            this.pairID = pairID;
+        }
     }
 
-    void CreateCards()
+    // Load the selected category from ScriptableObject
+    private void LoadCategory(string categoryName)
     {
-        for(int i = 0; i < spritePairs.Count; i++)
+        cardDataList = new List<CardData>();
+        matchedPairs = 0;
+
+        var category = cardGameData.categories.Find(c => c.categoryName == categoryName);
+        if (category == null)
+        {
+            Debug.LogError("Category not found: " + categoryName);
+            return;
+        }
+
+        int pairID = 0;
+
+        foreach (var pair in category.cardPairs)
+        {
+            cardDataList.Add(new CardData(pair.firstSprite, pairID));
+            cardDataList.Add(new CardData(pair.secondSprite, pairID));
+            pairID++;
+        }
+
+        totalPairs = pairID; // totalPairs = number of pairs
+        ShuffleCards(cardDataList);
+    }
+
+    // Create the cards in the grid
+    private void CreateCards()
+    {
+        foreach (var data in cardDataList)
         {
             Card newCard = Instantiate(cardPrefab, gridTransform);
-            newCard.SetIconSprite(spritePairs[i]);
+            newCard.SetIconSprite(data.sprite);
+            newCard.pairID = data.pairID;
             newCard.controller = this;
         }
     }
 
+    // Called when a card is clicked
     public void SetSelected(Card card)
     {
-        if(card.isSelected == false)
-        {
-            card.Show();
+        if (isChecking || card.isSelected || card.isMatched)
+            return;
 
-            if(firstSelected == null)
-            {
-                firstSelected = card;
-                return;
-            }
-            
-            if(secondSelected == null)
-            {
-                secondSelected = card;
-                StartCoroutine(CheckMatching(firstSelected, secondSelected));
-                firstSelected = null;
-                secondSelected = null;
-            }
+        card.Show();
+
+        if (firstSelected == null)
+        {
+            firstSelected = card;
+            return;
         }
+
+        secondSelected = card;
+        isChecking = true;
+
+        StartCoroutine(CheckMatching(firstSelected, secondSelected));
     }
 
-    IEnumerator CheckMatching(Card a, Card b)
+    // Coroutine to check match
+    private IEnumerator CheckMatching(Card a, Card b)
     {
-        yield return new WaitForSeconds(0.3f);
-        if(a.iconSprite == b.iconSprite)
+        yield return new WaitForSeconds(0.4f);
+
+        if (a.pairID == b.pairID)
         {
-            //Matched
+            matchedPairs++;
+
+            a.isMatched = true;
+            b.isMatched = true;
+
+            a.enabled = false;
+            b.enabled = false;
+
+            CheckWinCondition();
         }
         else
         {
-            //filp back
             a.Hide();
             b.Hide();
         }
+
+        firstSelected = null;
+        secondSelected = null;
+        isChecking = false;
     }
-    void ShuffleSprites(List<Sprite> spriteList)
+
+    // Shuffle the cards
+    private void ShuffleCards(List<CardData> list)
     {
-        for(int i = spriteList.Count - 1; i > 0; i--)
+        for (int i = list.Count - 1; i > 0; i--)
         {
             int randomIndex = Random.Range(0, i + 1);
-            Sprite temp = spriteList[i];
-            spriteList[i] = spriteList[randomIndex];
-            spriteList[randomIndex] = temp;
+
+            CardData temp = list[i];
+            list[i] = list[randomIndex];
+            list[randomIndex] = temp;
         }
+    }
+
+    // Check if all pairs are matched
+    private void CheckWinCondition()
+    {
+        if (matchedPairs >= totalPairs)
+        {
+            Debug.Log("YOU WIN!");
+            OnGameWon();
+        }
+    }
+
+    // Trigger win event
+    private void OnGameWon()
+    {
+        Debug.Log("All pairs matched!");
+        // TODO: show UI panel, play animation, sound, etc.
     }
 }

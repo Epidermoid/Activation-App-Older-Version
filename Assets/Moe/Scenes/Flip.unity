@@ -153,10 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardPrefab: {fileID: 7323715016697426171, guid: 4661aadb423416e45b4ceeedf69ee17a, type: 3}
   gridTransform: {fileID: 586518481}
-  sprites:
-  - {fileID: 21300000, guid: 5799aae8957a02e46a796cda2566ac02, type: 3}
-  - {fileID: 21300000, guid: c9e28e7389804a84d8e7f54b9a2ab4fb, type: 3}
-  - {fileID: 21300000, guid: c6ab4210787f36444a1fb76a8a8384a2, type: 3}
+  cardGameData: {fileID: 11400000, guid: ed0dbeaf8655da14c8472f3c565f9f97, type: 2}
 --- !u!4 &65707032
 Transform:
   m_ObjectHideFlags: 0
