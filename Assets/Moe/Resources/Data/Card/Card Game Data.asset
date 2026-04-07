@@ -13,15 +13,18 @@ MonoBehaviour:
   m_Name: Card Game Data
   m_EditorClassIdentifier: 
   categories:
-  - categoryName: Blue
-    unlocked: 0
-    cardPairs: []
   - categoryName: Road
     unlocked: 0
     cardPairs:
+    - firstSprite: {fileID: 21300000, guid: 566927b2cd4b46541ac530b761f1f401, type: 3}
+      secondSprite: {fileID: 21300000, guid: 566927b2cd4b46541ac530b761f1f401, type: 3}
+    - firstSprite: {fileID: 21300000, guid: 6f07939d11d248e47b14a7ca84d033cc, type: 3}
+      secondSprite: {fileID: 21300000, guid: 6f07939d11d248e47b14a7ca84d033cc, type: 3}
+    - firstSprite: {fileID: 21300000, guid: 6c1fb9ef6f168f84f9dff62fdffdfa66, type: 3}
+      secondSprite: {fileID: 21300000, guid: 6c1fb9ef6f168f84f9dff62fdffdfa66, type: 3}
+    - firstSprite: {fileID: 21300000, guid: 3556457b3bb23134f974dd8480ce905c, type: 3}
+      secondSprite: {fileID: 21300000, guid: 3556457b3bb23134f974dd8480ce905c, type: 3}
+    - firstSprite: {fileID: 21300000, guid: a8966dda6bf2f0b4cad5893869250118, type: 3}
+      secondSprite: {fileID: 21300000, guid: a8966dda6bf2f0b4cad5893869250118, type: 3}
     - firstSprite: {fileID: 21300000, guid: 5799aae8957a02e46a796cda2566ac02, type: 3}
       secondSprite: {fileID: 21300000, guid: 5799aae8957a02e46a796cda2566ac02, type: 3}
-    - firstSprite: {fileID: 21300000, guid: c9e28e7389804a84d8e7f54b9a2ab4fb, type: 3}
-      secondSprite: {fileID: 21300000, guid: c9e28e7389804a84d8e7f54b9a2ab4fb, type: 3}
-    - firstSprite: {fileID: 21300000, guid: c6ab4210787f36444a1fb76a8a8384a2, type: 3}
-      secondSprite: {fileID: 21300000, guid: c6ab4210787f36444a1fb76a8a8384a2, type: 3}

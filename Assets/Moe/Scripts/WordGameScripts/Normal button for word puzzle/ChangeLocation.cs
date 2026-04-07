@@ -26,10 +26,10 @@ public class ChangeLocation : MonoBehaviour
         targetObject.SetActive(false);
     }
 
-    [ContextMenu("Set RectTransform to 1075, -1075")]
+    [ContextMenu("Set RectTransform to 1083, -1083")]
     public void SetRectTransformToGameValues()
     {
-        SetRectTransformLeftRight(1075, -1075);
+        SetRectTransformLeftRight(1083, -1083);
             targetObject.SetActive(true);
     }
 }

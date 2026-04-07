@@ -2684,7 +2684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0daf35962cc3ba947bb7228e9810fad5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardGameData: {fileID: 11400000, guid: ed0dbeaf8655da14c8472f3c565f9f97, type: 2}
+  cardGameData: {fileID: 11400000, guid: 5ea71c828599c4c4db122e302ad13319, type: 2}
   cardSceneName: Flip
 --- !u!114 &1827659039
 MonoBehaviour:
