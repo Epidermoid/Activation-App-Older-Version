@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class DailyMinigame : MonoBehaviour
@@ -8,6 +9,10 @@ public class DailyMinigame : MonoBehaviour
     [SerializeField] private GameObject berry;
 
     [SerializeField] public int berryAmount = 6;
+
+    [SerializeField] public TextMeshProUGUI berryText;
+
+    [SerializeField] private Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -20,18 +25,23 @@ public class DailyMinigame : MonoBehaviour
             var bb = Instantiate(berry, GameObject.Find("MinigameBush").transform);
             bb.transform.localPosition = new Vector3 (randomX, randomZ, 0);
         }
+
+        berryText.text = PlayerPrefs.GetInt("Berry", 0).ToString();
     }
 
     private void Update()
     {
         if (berryAmount == 0)
         {
-            Destroy(gameObject);
+            StartCoroutine(End());
         }
     }
 
-    private void End()
+    IEnumerator End()
     {
+        animator.Play("Wow");
+        yield return new WaitForSeconds(2f);
+        GameObject.Find("Canvas").GetComponent<MenuManager>().karttaButton();
         Destroy(gameObject);
     }
 }

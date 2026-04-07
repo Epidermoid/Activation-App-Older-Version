@@ -24,18 +24,19 @@ public class DailyManager : MonoBehaviour
         if (dateNow == dateThen)
         {
             sameDate = true;
-            
+            PlayerPrefs.SetString("DateThen", DateTime.Now.Date.ToString());
+            Debug.Log(PlayerPrefs.GetString("DateThen"));
         }
         else if (dateNow != dateThen)
         {
             sameDate = false;
-
+            PlayerPrefs.SetString("DateThen", DateTime.Now.Date.ToString());
+            Debug.Log(PlayerPrefs.GetString("DateThen"));
 
             StartCoroutine(DailyDelay());
         }
 
-        PlayerPrefs.SetString("DateThen", DateTime.Now.Date.ToString());
-        Debug.Log(PlayerPrefs.GetString("DateThen"));
+        
     }
 
     // Update is called once per frame
