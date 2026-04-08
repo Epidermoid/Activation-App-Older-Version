@@ -65,7 +65,13 @@ public class QuizManager : MonoBehaviour
         GoPanel.SetActive(true);
         scoreText.text = score + "/" + totalQuestions;
 
-        foreach(var cat in quizGamesData.data)
+        float scoreRatio = (float)score / totalQuestions;
+        if(scoreRatio > 2f/3f)
+        {
+             Debug.Log("Unlocking badge for category: " + SelectedCategory);
+            BadgeManager.Instance.UnlockBadge(SelectedCategory);
+        }
+        /*foreach(var cat in quizGamesData.data)
         {
             if (cat.catagoryName == catagory)
             {
@@ -73,7 +79,7 @@ public class QuizManager : MonoBehaviour
                 Debug.Log("Badge unlocked for category: " + catagory);
                 break;
             }
-        }
+        }*/
     }
 
     private void Start()

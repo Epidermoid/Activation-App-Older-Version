@@ -32,12 +32,12 @@ MonoBehaviour:
     Row:
     - Z
     - N
-    - G
+    - L
     - T
     - Q
     - G
     - I
-    - B
+    - H
     - F
     - E
   - Size: 10
@@ -105,6 +105,6 @@ MonoBehaviour:
   - Word: WINTER
   - Word: ME
   - Word: WTF
-  - Word: "G\xC4Y"
-  - Word: "BR\xC4T"
+  - Word: "L\xC4Y"
+  - Word: "R\xC4T"
   - Word: "IR\xD6N"

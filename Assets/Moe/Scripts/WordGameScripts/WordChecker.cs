@@ -134,7 +134,9 @@ public class WordChecker : MonoBehaviour
                     temp.itsBadge = true;
                     _GameLeveData.data[i] = temp;
 
-                    Debug.Log("Badge unlocked for category: " + currentGameData.selectedCatagoryName);
+                    Debug.Log("Unlocking badge for category: " + currentGameData.selectedCatagoryName);
+                    BadgeManager.Instance.UnlockBadge(currentGameData.selectedCatagoryName);
+                    //Debug.Log("Badge unlocked for category: " + currentGameData.selectedCatagoryName);
                     break;
                 }
             }

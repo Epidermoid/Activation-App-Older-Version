@@ -156,6 +156,8 @@ public class CardController : MonoBehaviour
     private void OnGameWon()
     {
         Debug.Log("All pairs matched!");
+         Debug.Log("Unlocking badge for category: " + SelectedCategory);
+            BadgeManager.Instance.UnlockBadge(SelectedCategory);
         // TODO: show UI panel, play animation, sound, etc.
     }
 }

@@ -1,19 +1,20 @@
 using UnityEngine;
+using System.Collections;
 
 public class Badge : MonoBehaviour
 {
-    public string badgeName; // Assign this in Inspector
+    public string badgeName;
 
-    private void Start()
+    void Start()
     {
-        if (BadgeManager.Instance != null)
-        {
-            gameObject.SetActive(BadgeManager.Instance.IsBadgeUnlocked(badgeName));
-            Debug.Log("Badge activated");
-        }
+        bool unlocked = BadgeManager.Instance.IsBadgeUnlocked(badgeName);
+        if(unlocked)
+        {        
+        gameObject.SetActive(true);
+        Debug.Log("The bool is " + unlocked);
+        } 
         else
         {
-            Debug.LogWarning("BadgeManager instance not found!");
             gameObject.SetActive(false);
         }
     }
