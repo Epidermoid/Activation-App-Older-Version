@@ -9,7 +9,7 @@ public class TypeData : ScriptableObject
     [System.Serializable]
     public class QuestionData
     {
-        public string catagoryName;
+        public string categoryName;
         public string question;
         public string answer;
     }

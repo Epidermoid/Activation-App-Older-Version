@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
   - catagoryName: Vuoksi
+    itsBadge: 0
     quizData:
     - question: Who are you?
       answers:
@@ -30,6 +31,7 @@ MonoBehaviour:
       - huh
       answerIndex: 1
   - catagoryName: Koti
+    itsBadge: 0
     quizData:
     - question: Kitchen?
       answers:

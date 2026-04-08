@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/Moe/Scenes/Flip.unity
     guid: 0f03eed637fd7ce4ca9b5ac1175c069d
   - enabled: 1
+    path: Assets/Moe/Scenes/Type.unity
+    guid: b04d18f6eb6607f4795bc8dc23358b74
+  - enabled: 1
+    path: Assets/Moe/Scenes/Badge.unity
+    guid: cf49f5cb84280b94c832e7303b7d15e8
+  - enabled: 1
     path: Assets/Mapbox/Examples/0_PrefabScenes/Location-basedGame.unity
     guid: 42f6aa7ce7a604f16ade319663f46ceb
   m_configObjects: {}
