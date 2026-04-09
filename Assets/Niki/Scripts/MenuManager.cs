@@ -96,6 +96,7 @@ public class MenuManager : MonoBehaviour
     public void OpenProfile()
     {
         profilePage.SetActive(true);
+        profilePage.GetComponent<BerryUpdater>().UpdateAmount();
     }
 
     public void CloseProfile()
