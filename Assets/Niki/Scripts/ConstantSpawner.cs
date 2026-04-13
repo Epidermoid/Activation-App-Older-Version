@@ -18,7 +18,7 @@ public class ConstantSpawner : MonoBehaviour
 
     IEnumerator ConstantSpawns()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(30f);
         if (ammountActive < 5 )
         {
             var randomX = UnityEngine.Random.Range(-30, 30);

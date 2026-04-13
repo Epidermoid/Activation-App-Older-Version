@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EventInfo : MonoBehaviour
 {
@@ -24,9 +25,16 @@ public class EventInfo : MonoBehaviour
 
     private MenuManager menuManager;
 
+    private GameObject player;
+
+    [SerializeField] private Button insertCodeButton;
+    [SerializeField] private GameObject tooFarText;
+
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.Find("PlayerTarget");
+
         menuManager = GameObject.Find("Canvas").GetComponent<MenuManager>();
 
         linkedMarker = GameObject.Find(linkedMarker.name + "(Clone)");
@@ -34,6 +42,22 @@ public class EventInfo : MonoBehaviour
         title.text = wantedTitle;
         basicInfo.text = "Osoite: " + address + "\nAukioloaika: " + times;
         longInfo.text = wantedInfo;
+    }
+
+    private void Update()
+    {
+        float distance = Vector3.Distance(player.transform.position, linkedMarker.transform.position);
+
+        if (distance <= 50f)
+        {
+            insertCodeButton.interactable = true;
+            tooFarText.SetActive(false);
+        }
+        else if (distance > 50f)
+        {
+            insertCodeButton.interactable = false;
+            tooFarText.SetActive(true);
+        }
     }
 
     public void BackButton()
