@@ -4,6 +4,8 @@ using System.Runtime.CompilerServices;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
+
 
 public class MenuManager : MonoBehaviour
 {
@@ -28,7 +30,8 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject placeSettings;
     private bool placeSettingsOpen = false;
 
-    
+    public Color activeColor;
+    public Color inactiveColor;
 
     private void Start()
     {
@@ -130,18 +133,6 @@ public class MenuManager : MonoBehaviour
         {
             placeSettingsOpen = false;
             placeSettings.SetActive(false);
-        }
-    }
-
-    public void PlaceToggle(GameObject wanted)
-    {
-        if (!wanted.activeSelf)
-        {
-            wanted.SetActive(true);
-        }
-        else if (wanted.activeSelf)
-        {
-            wanted.SetActive(false);
         }
     }
 }

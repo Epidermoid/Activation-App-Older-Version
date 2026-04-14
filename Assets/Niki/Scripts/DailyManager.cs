@@ -9,7 +9,7 @@ public class DailyManager : MonoBehaviour
     [SerializeField] private string dateNow;
 
     [SerializeField] private bool sameDate;
-    [SerializeField] private bool dailyDone;
+    public bool dailyDone;
 
     [SerializeField] private GameObject dailyEvent;
 
@@ -21,18 +21,20 @@ public class DailyManager : MonoBehaviour
         dateThen = PlayerPrefs.GetString("DateThen", "a");
         dateNow = DateTime.Now.Date.ToString();
 
-        if (dateNow == dateThen)
+        if (dateNow == dateThen && PlayerPrefs.GetInt("DD", 0) == 1)
         {
             sameDate = true;
             PlayerPrefs.SetString("DateThen", DateTime.Now.Date.ToString());
-            Debug.Log(PlayerPrefs.GetString("DateThen"));
+            Debug.Log("No");
         }
-        else if (dateNow != dateThen)
+        else if (dateNow != dateThen || PlayerPrefs.GetInt("DD", 0) == 0)
         {
             sameDate = false;
             PlayerPrefs.SetString("DateThen", DateTime.Now.Date.ToString());
-            Debug.Log(PlayerPrefs.GetString("DateThen"));
-
+            Debug.Log("Ye");
+            
+            dailyDone = false;
+            PlayerPrefs.SetInt("DD", 0);
             StartCoroutine(DailyDelay());
         }
 
