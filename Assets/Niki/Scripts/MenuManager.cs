@@ -27,6 +27,9 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject advancementsBottomBar;
     [SerializeField] private GameObject characterBackground;
 
+    [SerializeField] private GameObject characterSelect;
+    [SerializeField] private bool characterSelectOpen = false;
+
     [SerializeField] private GameObject placeSettings;
     private bool placeSettingsOpen = false;
 
@@ -105,6 +108,7 @@ public class MenuManager : MonoBehaviour
     public void CloseProfile()
     {
         profilePage.SetActive(false);
+        characterSelect.SetActive(false);
         OpenCharacterPage();
     }
 
@@ -133,6 +137,20 @@ public class MenuManager : MonoBehaviour
         {
             placeSettingsOpen = false;
             placeSettings.SetActive(false);
+        }
+    }
+
+    public void OpenCharacterSelect()
+    {
+        if (characterSelectOpen == false)
+        {
+            characterSelectOpen = true;
+            characterSelect.SetActive(true);
+        }
+        else if (characterSelectOpen == true)
+        {
+            characterSelectOpen = false;
+            characterSelect.SetActive(false);
         }
     }
 }
