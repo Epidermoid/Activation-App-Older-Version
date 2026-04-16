@@ -4,6 +4,7 @@ using System.Runtime.CompilerServices;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.UIElements;
 
 
@@ -30,6 +31,14 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject characterSelect;
     [SerializeField] private bool characterSelectOpen = false;
 
+    [SerializeField] private GameObject nameEdit;
+    [SerializeField] private bool nameEditOpen = false;
+    [SerializeField] private TextMeshProUGUI cName;
+    [SerializeField] private TextMeshProUGUI cEdit;
+
+    [SerializeField] private GameObject settings;
+    [SerializeField] private bool settingsOpen = false;
+
     [SerializeField] private GameObject placeSettings;
     private bool placeSettingsOpen = false;
 
@@ -40,6 +49,7 @@ public class MenuManager : MonoBehaviour
     {
         // Lowers the map so that the directions line doesn't flicker
         GameObject.Find("Map").transform.position = new Vector3(0f, -0.1f, 0f);
+        cName.text = PlayerPrefs.GetString("Name", "Nimi");
     }
 
     public void karttaButton()
@@ -146,11 +156,58 @@ public class MenuManager : MonoBehaviour
         {
             characterSelectOpen = true;
             characterSelect.SetActive(true);
+            nameEditOpen = false;
+            nameEdit.SetActive(false);
+            settingsOpen = false;
+            settings.SetActive(false);
         }
         else if (characterSelectOpen == true)
         {
             characterSelectOpen = false;
             characterSelect.SetActive(false);
+        }
+    }
+
+    public void OpenNameEdit()
+    {
+        if (nameEditOpen == false)
+        {
+            nameEditOpen = true;
+            nameEdit.SetActive(true);
+            characterSelectOpen = false;
+            characterSelect.SetActive(false);
+            settingsOpen = false;
+            settings.SetActive(false);
+        }
+        else if (nameEditOpen == true)
+        {
+            nameEditOpen = false;
+            nameEdit.SetActive(false);
+
+        }
+    }
+
+    public void NameEdit(string name)
+    {
+        cName.text = name;
+        PlayerPrefs.SetString("Name", name);
+    }
+
+    public void OpenSettings()
+    {
+        if (settingsOpen == false)
+        {
+            settingsOpen = true;
+            settings.SetActive(true);
+            nameEditOpen = false;
+            nameEdit.SetActive(false);
+            characterSelectOpen = false;
+            characterSelect.SetActive(false);
+        }
+        else if (settingsOpen == true)
+        {
+            settingsOpen = false;
+            settings.SetActive(false);
         }
     }
 }
