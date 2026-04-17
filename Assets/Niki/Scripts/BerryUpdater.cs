@@ -11,6 +11,5 @@ public class BerryUpdater : MonoBehaviour
     public void UpdateAmount()
     {
         berryNumber.text = PlayerPrefs.GetInt("Berry", 0).ToString();
-        Debug.Log("a");
     }
 }

@@ -7,7 +7,8 @@ public class CustomizeManager : MonoBehaviour
 {
     public List<Sprite> bigAvatars = new List<Sprite>(); 
 
-    [SerializeField] private GameObject bigAvatarSlot;
+    [SerializeField] public GameObject bigAvatarSlot;
+    [SerializeField] public GameObject equipBigAvatar;
 
     private void Start()
     {

@@ -5,7 +5,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
+
 
 
 public class MenuManager : MonoBehaviour
@@ -27,9 +27,11 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject characterBottomBar;
     [SerializeField] private GameObject advancementsBottomBar;
     [SerializeField] private GameObject characterBackground;
+    [SerializeField] private GameObject bottomStuff;
 
     [SerializeField] private GameObject characterSelect;
     [SerializeField] private bool characterSelectOpen = false;
+    
 
     [SerializeField] private GameObject nameEdit;
     [SerializeField] private bool nameEditOpen = false;
@@ -45,11 +47,17 @@ public class MenuManager : MonoBehaviour
     public Color activeColor;
     public Color inactiveColor;
 
+    private CustomizeManager customizeManager;
+    private int cSelInt;
+
     private void Start()
     {
         // Lowers the map so that the directions line doesn't flicker
         GameObject.Find("Map").transform.position = new Vector3(0f, -0.1f, 0f);
         cName.text = PlayerPrefs.GetString("Name", "Nimi");
+        customizeManager = GameObject.Find("-CustomizeManager").GetComponent<CustomizeManager>();
+        customizeManager.equipBigAvatar.GetComponent<Image>().sprite = customizeManager.bigAvatars[PlayerPrefs.GetInt("Avatar", 0)];
+        cSelInt = PlayerPrefs.GetInt("Avatar", 0);
     }
 
     public void karttaButton()
@@ -118,14 +126,21 @@ public class MenuManager : MonoBehaviour
     public void CloseProfile()
     {
         profilePage.SetActive(false);
+        characterSelectOpen = false;
         characterSelect.SetActive(false);
+        nameEditOpen = false;
+        nameEdit.SetActive(false);
+        settingsOpen = false;
+        settings.SetActive(false);
         OpenCharacterPage();
+        karttaButton();
     }
 
     public void OpenCharacterPage()
     {
         characterBackground.SetActive(true);
         characterBottomBar.SetActive(true);
+        bottomStuff.SetActive(true);
         advancementsBottomBar.SetActive(false);
     }
 
@@ -133,6 +148,7 @@ public class MenuManager : MonoBehaviour
     {
         characterBackground.SetActive(false);
         characterBottomBar.SetActive(false);
+        bottomStuff.SetActive(false);
         advancementsBottomBar.SetActive(true);
     }
 
@@ -155,18 +171,54 @@ public class MenuManager : MonoBehaviour
         if (characterSelectOpen == false)
         {
             characterSelectOpen = true;
-            characterSelect.SetActive(true);
+            customizeManager.equipBigAvatar.SetActive(true);
+            customizeManager.bigAvatarSlot.SetActive(false);
+
             nameEditOpen = false;
             nameEdit.SetActive(false);
+
             settingsOpen = false;
             settings.SetActive(false);
         }
         else if (characterSelectOpen == true)
         {
             characterSelectOpen = false;
-            characterSelect.SetActive(false);
+            customizeManager.equipBigAvatar.SetActive(false);
+            customizeManager.bigAvatarSlot.SetActive(true);
         }
     }
+
+    public void CSelectScrollLeft()
+    {
+        var cS = cSelInt - 1;
+        
+        if (cS < 0)
+        {
+            cS = customizeManager.bigAvatars.Count - 1;
+        }
+
+        Debug.Log(cS);
+        customizeManager.equipBigAvatar.GetComponent<Image>().sprite = customizeManager.bigAvatars[cS];
+        customizeManager.bigAvatarSlot.GetComponent<Image>().sprite = customizeManager.bigAvatars[cS];
+        cSelInt = cS;
+    }
+
+    public void CSelectScrollRight()
+    {
+        var cS = cSelInt + 1;
+
+        if (cS > customizeManager.bigAvatars.Count - 1)
+        {
+            cS = 0;
+        }
+
+        Debug.Log(cS);
+        customizeManager.equipBigAvatar.GetComponent<Image>().sprite = customizeManager.bigAvatars[cS];
+        customizeManager.bigAvatarSlot.GetComponent<Image>().sprite = customizeManager.bigAvatars[cS];
+        cSelInt = cS;
+    }
+
+
 
     public void OpenNameEdit()
     {
@@ -174,8 +226,11 @@ public class MenuManager : MonoBehaviour
         {
             nameEditOpen = true;
             nameEdit.SetActive(true);
+
             characterSelectOpen = false;
-            characterSelect.SetActive(false);
+            customizeManager.equipBigAvatar.SetActive(false);
+            customizeManager.bigAvatarSlot.SetActive(true);
+
             settingsOpen = false;
             settings.SetActive(false);
         }
@@ -199,10 +254,13 @@ public class MenuManager : MonoBehaviour
         {
             settingsOpen = true;
             settings.SetActive(true);
+
             nameEditOpen = false;
             nameEdit.SetActive(false);
+
             characterSelectOpen = false;
-            characterSelect.SetActive(false);
+            customizeManager.equipBigAvatar.SetActive(false);
+            customizeManager.bigAvatarSlot.SetActive(true);
         }
         else if (settingsOpen == true)
         {
@@ -210,4 +268,6 @@ public class MenuManager : MonoBehaviour
             settings.SetActive(false);
         }
     }
+
+
 }
