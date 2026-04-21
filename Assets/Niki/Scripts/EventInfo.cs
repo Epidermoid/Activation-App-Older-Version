@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class EventInfo : MonoBehaviour
@@ -23,6 +24,13 @@ public class EventInfo : MonoBehaviour
 
     [SerializeField] public GameObject dir;
 
+    [SerializeField] private GameObject codeInput;
+    [SerializeField] private bool codeOpen;
+    [SerializeField] private string correctCode;
+
+    [SerializeField] private string mgCatagory;
+    [SerializeField] private string mgScene;
+
     private MenuManager menuManager;
 
     private GameObject player;
@@ -38,6 +46,7 @@ public class EventInfo : MonoBehaviour
         menuManager = GameObject.Find("Canvas").GetComponent<MenuManager>();
 
         linkedMarker = GameObject.Find(linkedMarker.name + "(Clone)");
+
 
         title.text = wantedTitle;
         basicInfo.text = "Osoite: " + address + "\nAukioloaika: " + times;
@@ -82,5 +91,36 @@ public class EventInfo : MonoBehaviour
         
         menuManager.Route();
         
+    }
+
+    public void OpenCode()
+    {
+        if (codeOpen == false)
+        {
+            codeInput.SetActive(true);
+            codeOpen = true;
+        }
+        else if (codeOpen == true)
+        {
+            codeInput.SetActive(false);
+            codeOpen = false;
+        } 
+        
+    }
+    
+
+
+    public void PlayMinigame()
+    {
+        QuizManager.SelectedCategory = mgCatagory;
+        SceneManager.LoadScene(mgScene);
+    }
+
+    public void CheckCode(string input)
+    {
+        if (input == correctCode)
+        {
+            PlayMinigame();
+        }
     }
 }
