@@ -2241,8 +2241,8 @@ MonoBehaviour:
   codeInput: {fileID: 628444823055337727}
   codeOpen: 0
   correctCode: 1234567
-  mgCatagory: Kultturitalo
-  mgScene: Word
+  mgCatagory: Road
+  mgScene: Flip
   insertCodeButton: {fileID: 5598409842636571766}
   tooFarText: {fileID: 5171172364383828287}
 --- !u!1 &8200126518834647748

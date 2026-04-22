@@ -10151,7 +10151,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dateThen: 
   dateNow: 
-  sameDate: 0
   dailyDone: 0
   dailyEvent: {fileID: 8612890922088130276, guid: 57e2c990764a0704686a6a398236cdf7, type: 3}
 --- !u!1 &1617170834

@@ -112,8 +112,25 @@ public class EventInfo : MonoBehaviour
 
     public void PlayMinigame()
     {
-        QuizManager.SelectedCategory = mgCatagory;
-        SceneManager.LoadScene(mgScene);
+
+        if (mgScene == "Quiz")
+        {
+            QuizManager.SelectedCategory = mgCatagory;
+        }
+        else if (mgScene == "Word")
+        {
+
+        }
+        else if (mgScene == "Flip")
+        {
+            CardController.SelectedCategory = mgCatagory;
+        }
+        else if (mgScene == "Type")
+        {
+            TypeScript.selectedCategory = mgCatagory;
+        }
+
+            SceneManager.LoadScene(mgScene);
     }
 
     public void CheckCode(string input)

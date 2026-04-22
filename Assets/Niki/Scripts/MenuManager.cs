@@ -52,8 +52,9 @@ public class MenuManager : MonoBehaviour
 
     private void Start()
     {
-        // Lowers the map so that the directions line doesn't flicker
+        // Lowers the map so that the directions line doesn't flicker (directions dont work in build :((((()
         GameObject.Find("Map").transform.position = new Vector3(0f, -0.1f, 0f);
+
         cName.text = PlayerPrefs.GetString("Name", "Nimi");
         customizeManager = GameObject.Find("-CustomizeManager").GetComponent<CustomizeManager>();
         customizeManager.equipBigAvatar.GetComponent<Image>().sprite = customizeManager.bigAvatars[PlayerPrefs.GetInt("Avatar", 0)];
@@ -90,7 +91,7 @@ public class MenuManager : MonoBehaviour
 
 
 
-
+    // Works in editor (even the simulator) but not in build for whatever reason
     public void Route()
     {
         var route = Instantiate(directions);
@@ -274,6 +275,4 @@ public class MenuManager : MonoBehaviour
             settings.SetActive(false);
         }
     }
-
-
 }
