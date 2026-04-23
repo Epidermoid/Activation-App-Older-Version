@@ -52,8 +52,9 @@ public class MenuManager : MonoBehaviour
 
     private void Start()
     {
-        // Lowers the map so that the directions line doesn't flicker
+        // Lowers the map so that the directions line doesn't flicker (directions dont work in build :((((()
         GameObject.Find("Map").transform.position = new Vector3(0f, -0.1f, 0f);
+
         cName.text = PlayerPrefs.GetString("Name", "Nimi");
         customizeManager = GameObject.Find("-CustomizeManager").GetComponent<CustomizeManager>();
         customizeManager.equipBigAvatar.GetComponent<Image>().sprite = customizeManager.bigAvatars[PlayerPrefs.GetInt("Avatar", 0)];
@@ -90,7 +91,7 @@ public class MenuManager : MonoBehaviour
 
 
 
-
+    // Works in editor (even the simulator) but not in build for whatever reason
     public void Route()
     {
         var route = Instantiate(directions);
@@ -126,8 +127,10 @@ public class MenuManager : MonoBehaviour
     public void CloseProfile()
     {
         profilePage.SetActive(false);
+        
         characterSelectOpen = false;
-        characterSelect.SetActive(false);
+        customizeManager.equipBigAvatar.SetActive(false);
+        customizeManager.bigAvatarSlot.SetActive(true);
         nameEditOpen = false;
         nameEdit.SetActive(false);
         settingsOpen = false;
@@ -142,6 +145,7 @@ public class MenuManager : MonoBehaviour
         characterBottomBar.SetActive(true);
         bottomStuff.SetActive(true);
         advancementsBottomBar.SetActive(false);
+        cName.gameObject.SetActive(true);
     }
 
     public void OpenAdvancementsPage()
@@ -150,6 +154,7 @@ public class MenuManager : MonoBehaviour
         characterBottomBar.SetActive(false);
         bottomStuff.SetActive(false);
         advancementsBottomBar.SetActive(true);
+        cName.gameObject.SetActive(false);
     }
 
     public void OpenPlaceSettings()
@@ -201,6 +206,7 @@ public class MenuManager : MonoBehaviour
         customizeManager.equipBigAvatar.GetComponent<Image>().sprite = customizeManager.bigAvatars[cS];
         customizeManager.bigAvatarSlot.GetComponent<Image>().sprite = customizeManager.bigAvatars[cS];
         cSelInt = cS;
+        PlayerPrefs.SetInt("Avatar", cS);
     }
 
     public void CSelectScrollRight()
@@ -216,6 +222,7 @@ public class MenuManager : MonoBehaviour
         customizeManager.equipBigAvatar.GetComponent<Image>().sprite = customizeManager.bigAvatars[cS];
         customizeManager.bigAvatarSlot.GetComponent<Image>().sprite = customizeManager.bigAvatars[cS];
         cSelInt = cS;
+        PlayerPrefs.SetInt("Avatar", cS);
     }
 
 
@@ -268,6 +275,4 @@ public class MenuManager : MonoBehaviour
             settings.SetActive(false);
         }
     }
-
-
 }

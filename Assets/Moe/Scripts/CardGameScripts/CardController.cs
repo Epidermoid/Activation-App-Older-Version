@@ -24,6 +24,8 @@ public class CardController : MonoBehaviour
 
     private bool isChecking = false;
 
+    [SerializeField] private GameObject backToMap; // marking additions made by me (niki)
+
     private void Start()
     {
         LoadCategory(SelectedCategory);
@@ -155,6 +157,8 @@ public class CardController : MonoBehaviour
     // Trigger win event
     private void OnGameWon()
     {
+        backToMap.SetActive(true); // marking additions made by me (niki)
+
         Debug.Log("All pairs matched!");
          Debug.Log("Unlocking badge for category: " + SelectedCategory);
             BadgeManager.Instance.UnlockBadge(SelectedCategory);

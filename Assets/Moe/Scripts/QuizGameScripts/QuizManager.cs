@@ -28,6 +28,8 @@ public class QuizManager : MonoBehaviour
     int totalQuestions;
     public int score;
 
+    [SerializeField] private GameObject backToMap; // marking additions made by me (niki)
+
     private void Awake()
     {
         if(Instance == null)
@@ -68,8 +70,12 @@ public class QuizManager : MonoBehaviour
         float scoreRatio = (float)score / totalQuestions;
         if(scoreRatio > 2f/3f)
         {
-             Debug.Log("Unlocking badge for category: " + SelectedCategory);
+            backToMap.SetActive(true); // marking additions made by me (niki)
+
+            Debug.Log("Unlocking badge for category: " + SelectedCategory);
             BadgeManager.Instance.UnlockBadge(SelectedCategory);
+
+            
         }
         /*foreach(var cat in quizGamesData.data)
         {

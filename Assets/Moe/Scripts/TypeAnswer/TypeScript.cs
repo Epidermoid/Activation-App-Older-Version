@@ -14,6 +14,8 @@ public class TypeScript : MonoBehaviour
     private TypeData.QuestionData currentQuestion;
     private string input;
 
+    [SerializeField] private GameObject backToMap; // marking additions made by me (niki)
+
     void Start()
     {
         GameObject.SetActive(false);
@@ -54,6 +56,8 @@ public class TypeScript : MonoBehaviour
 
         if (playerAnswer == correctAnswer)
         {
+            backToMap.SetActive(true); // marking additions made by me (niki)
+
             Debug.Log("Correct!");
             GameObject.SetActive(true);
             feedbackText.text = "Correct!";

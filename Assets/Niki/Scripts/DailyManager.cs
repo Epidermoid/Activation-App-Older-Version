@@ -7,8 +7,6 @@ public class DailyManager : MonoBehaviour
 {
     [SerializeField] private string dateThen;
     [SerializeField] private string dateNow;
-
-    [SerializeField] private bool sameDate;
     public bool dailyDone;
 
     [SerializeField] private GameObject dailyEvent;
@@ -23,13 +21,13 @@ public class DailyManager : MonoBehaviour
 
         if (dateNow == dateThen && PlayerPrefs.GetInt("DD", 0) == 1)
         {
-            sameDate = true;
+
             PlayerPrefs.SetString("DateThen", DateTime.Now.Date.ToString());
             Debug.Log("No");
         }
         else if (dateNow != dateThen || PlayerPrefs.GetInt("DD", 0) == 0)
         {
-            sameDate = false;
+
             PlayerPrefs.SetString("DateThen", DateTime.Now.Date.ToString());
             Debug.Log("Ye");
             
