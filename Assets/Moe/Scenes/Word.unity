@@ -695,7 +695,7 @@ MonoBehaviour:
   currentGameData: {fileID: 11400000, guid: 73282239ff55ff44288466b1bcd8a4af, type: 2}
   gridSquarePrefab: {fileID: 5326381679887829818, guid: 3b31b6ad2bb42cd4b8bf60d24ba8684f, type: 3}
   alphabetData: {fileID: 11400000, guid: 2064c6bbcd721634f8e06643ed3773cf, type: 2}
-  topPosition: 4.55
+  topPosition: 3
 --- !u!4 &688521100
 Transform:
   m_ObjectHideFlags: 0
@@ -1002,16 +1002,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404961095}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.00002670288}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1612183322}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 72, y: -1236}
-  m_SizeDelta: {x: 43.171, y: 41.019}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 72.00003, y: -480}
+  m_SizeDelta: {x: 43.171, y: 41.018982}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1404961097
 MonoBehaviour:
@@ -1144,7 +1144,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 82}
-  m_SizeDelta: {x: 1013, y: 1100}
+  m_SizeDelta: {x: 1000, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1612183323
 MonoBehaviour:
@@ -1198,7 +1198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentGameData: {fileID: 11400000, guid: 73282239ff55ff44288466b1bcd8a4af, type: 2}
   searchingWordPrefab: {fileID: 4403202366703358166, guid: b49d1dc625e0b4d4f8f32aaddc1e652c, type: 3}
-  offset: 100
+  offset: 40
   maxColumns: 1
   maxRows: 1
 --- !u!1 &1719928827

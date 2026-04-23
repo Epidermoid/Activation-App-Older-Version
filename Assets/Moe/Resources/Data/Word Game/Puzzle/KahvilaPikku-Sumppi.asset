@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bac32628ead30c4ebbd1343de091b56, type: 3}
+  m_Name: KahvilaPikku-Sumppi
+  m_EditorClassIdentifier: 
+  timeInSeconds: 0
+  Columns: 9
+  Rows: 9
+  Board:
+  - Size: 9
+    Row:
+    - H
+    - T
+    - W
+    - Q
+    - J
+    - B
+    - N
+    - M
+    - V
+  - Size: 9
+    Row:
+    - V
+    - K
+    - E
+    - G
+    - L
+    - O
+    - P
+    - A
+    - E
+  - Size: 9
+    Row:
+    - O
+    - U
+    - N
+    - K
+    - U
+    - P
+    - P
+    - I
+    - S
+  - Size: 9
+    Row:
+    - I
+    - I
+    - M
+    - A
+    - S
+    - E
+    - E
+    - T
+    - I
+  - Size: 9
+    Row:
+    - L
+    - T
+    - U
+    - H
+    - I
+    - C
+    - L
+    - O
+    - P
+  - Size: 9
+    Row:
+    - E
+    - T
+    - F
+    - V
+    - K
+    - K
+    - I
+    - E
+    - I
+  - Size: 9
+    Row:
+    - I
+    - I
+    - D
+    - I
+    - K
+    - Y
+    - M
+    - M
+    - S
+  - Size: 9
+    Row:
+    - P
+    - U
+    - L
+    - L
+    - A
+    - K
+    - S
+    - I
+    - T
+  - Size: 9
+    Row:
+    - "\xC4"
+    - A
+    - J
+    - A
+    - I
+    - O
+    - A
+    - I
+    - E
+  SearchWords:
+  - Word: "VOILEIP\xC4"
+  - Word: PULLA
+  - Word: KAHVI
+  - Word: KUITTI
+  - Word: LIMSA
+  - Word: KUPPI
+  - Word: LUSIKKA
+  - Word: TEE
+  - Word: VESIPISTE
+  - Word: MAITO
