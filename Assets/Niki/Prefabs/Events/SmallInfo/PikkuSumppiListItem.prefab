@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 6115080147689621970}
   - component: {fileID: 8092601151448631404}
   m_Layer: 5
-  m_Name: VuoksiListItem
+  m_Name: PikkuSumppiListItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -199,8 +199,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81c51f757fd673746bbbb6210e767f69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  linkedMarker: {fileID: 2147350033808795455, guid: 1f32c93719427c549a8714079ad57ad1, type: 3}
-  linkedInfo: {fileID: 8143744638302892622, guid: 9b46025dc1b19604d9f143a9ae1dc40d, type: 3}
+  linkedMarker: {fileID: 2147350033808795455, guid: 35504d87d05be054594bfd79de85334f, type: 3}
+  linkedInfo: {fileID: 8143744638302892622, guid: 9a7b7a815fbfc1247a8e577c555bf2e1, type: 3}
 --- !u!114 &6115080147689621970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -560,7 +560,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Vuoksi
+  m_text: Pikku-Sumppi
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6d706065d7d02a041a4947f9f1c10d04, type: 2}
   m_sharedMaterial: {fileID: -8297992635494637909, guid: 6d706065d7d02a041a4947f9f1c10d04, type: 2}
@@ -587,8 +587,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 68.8
-  m_fontSizeBase: 68.8
+  m_fontSize: 60.7
+  m_fontSizeBase: 60.7
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -603,7 +603,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -623,7 +623,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -156.28928, w: -31.612053}
+  m_margin: {x: 0, y: 0, z: -181.2529, w: -31.612053}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -797,8 +797,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 134.47467, y: -140.38689}
-  m_SizeDelta: {x: 221.7736, y: 226.822}
+  m_AnchoredPosition: {x: 123.7276, y: -140.37413}
+  m_SizeDelta: {x: 209.0966, y: 237.1393}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3212862910450663776
 CanvasRenderer:
@@ -828,7 +828,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2ac3746421eb7d14384acfd43abd1a1f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e194280638514df49b0fe17aca603227, type: 3}
   m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -837,7 +837,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 2
+  m_PixelsPerUnitMultiplier: 0.75
 --- !u!1 &8107233020684714093
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,7 +905,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Osoite: Opettajantie 1
 
-    Aukioloaika: 6:00 - 16:00
+    Aukioloaika:
+
+    Ma-Pe 8.30-14.15
 
 '
   m_isRightToLeft: 0

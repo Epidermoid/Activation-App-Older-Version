@@ -50,6 +50,12 @@ public class MenuManager : MonoBehaviour
     private CustomizeManager customizeManager;
     private int cSelInt;
 
+    [SerializeField] private Image pencil;
+    [SerializeField] private Image guy;
+    [SerializeField] private Image set;
+    [SerializeField] private Color full;
+    [SerializeField] private Color not;
+
     private void Start()
     {
         // Lowers the map so that the directions line doesn't flicker (directions dont work in build :((((()
@@ -135,6 +141,9 @@ public class MenuManager : MonoBehaviour
         nameEdit.SetActive(false);
         settingsOpen = false;
         settings.SetActive(false);
+        pencil.color = full;
+        guy.color = full;
+        set.color = full;
         OpenCharacterPage();
         karttaButton();
     }
@@ -184,12 +193,20 @@ public class MenuManager : MonoBehaviour
 
             settingsOpen = false;
             settings.SetActive(false);
+
+            pencil.color = not;
+            guy.color = full;
+            set.color = not;
         }
         else if (characterSelectOpen == true)
         {
             characterSelectOpen = false;
             customizeManager.equipBigAvatar.SetActive(false);
             customizeManager.bigAvatarSlot.SetActive(true);
+
+            pencil.color = full;
+            guy.color = full;
+            set.color = full;
         }
     }
 
@@ -205,6 +222,7 @@ public class MenuManager : MonoBehaviour
         Debug.Log(cS);
         customizeManager.equipBigAvatar.GetComponent<Image>().sprite = customizeManager.bigAvatars[cS];
         customizeManager.bigAvatarSlot.GetComponent<Image>().sprite = customizeManager.bigAvatars[cS];
+        customizeManager.mapAvatar.GetComponent<SpriteRenderer>().sprite = customizeManager.mapAvatars[cS];
         cSelInt = cS;
         PlayerPrefs.SetInt("Avatar", cS);
     }
@@ -221,6 +239,7 @@ public class MenuManager : MonoBehaviour
         Debug.Log(cS);
         customizeManager.equipBigAvatar.GetComponent<Image>().sprite = customizeManager.bigAvatars[cS];
         customizeManager.bigAvatarSlot.GetComponent<Image>().sprite = customizeManager.bigAvatars[cS];
+        customizeManager.mapAvatar.GetComponent<SpriteRenderer>().sprite = customizeManager.mapAvatars[cS];
         cSelInt = cS;
         PlayerPrefs.SetInt("Avatar", cS);
     }
@@ -240,12 +259,19 @@ public class MenuManager : MonoBehaviour
 
             settingsOpen = false;
             settings.SetActive(false);
+
+            pencil.color = full;
+            guy.color = not;
+            set.color = not;
         }
         else if (nameEditOpen == true)
         {
             nameEditOpen = false;
             nameEdit.SetActive(false);
 
+            pencil.color = full;
+            guy.color = full;
+            set.color = full;
         }
     }
 
@@ -268,11 +294,19 @@ public class MenuManager : MonoBehaviour
             characterSelectOpen = false;
             customizeManager.equipBigAvatar.SetActive(false);
             customizeManager.bigAvatarSlot.SetActive(true);
+
+            pencil.color = not;
+            guy.color = not;
+            set.color = full;
         }
         else if (settingsOpen == true)
         {
             settingsOpen = false;
             settings.SetActive(false);
+
+            pencil.color = full;
+            guy.color = full;
+            set.color = full;
         }
     }
 }
