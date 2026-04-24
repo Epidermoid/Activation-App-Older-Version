@@ -56,6 +56,11 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private Color full;
     [SerializeField] private Color not;
 
+    private GameObject[] schools;
+    private GameObject[] shops;
+    private GameObject[] health;
+    private GameObject[] cafes;
+
     private void Start()
     {
         // Lowers the map so that the directions line doesn't flicker (directions dont work in build :((((()
@@ -65,6 +70,11 @@ public class MenuManager : MonoBehaviour
         customizeManager = GameObject.Find("-CustomizeManager").GetComponent<CustomizeManager>();
         customizeManager.equipBigAvatar.GetComponent<Image>().sprite = customizeManager.bigAvatars[PlayerPrefs.GetInt("Avatar", 0)];
         cSelInt = PlayerPrefs.GetInt("Avatar", 0);
+
+        schools = GameObject.FindGameObjectsWithTag("School");
+        shops = GameObject.FindGameObjectsWithTag("Shop");
+        health = GameObject.FindGameObjectsWithTag("Health");
+        cafes = GameObject.FindGameObjectsWithTag("Cafe");
     }
 
     public void karttaButton()

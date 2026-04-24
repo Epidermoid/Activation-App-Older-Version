@@ -7,6 +7,11 @@ TagManager:
   - Info
   - Active
   - Directions
+  - School
+  - Shop
+  - Health
+  - Cafe
+  - Job
   layers:
   - Default
   - TransparentFX

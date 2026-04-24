@@ -22,6 +22,8 @@ public class WordChecker : MonoBehaviour
     private Vector2 _direction;
     private List<int> _correctSquareList = new List<int>();
 
+    [SerializeField] private GameObject backToMap; // marking additions made by me (niki)
+
     private void OnEnable()
     {
         GameEvents.OnCheckSquare += SquareSelected;
@@ -133,6 +135,8 @@ public class WordChecker : MonoBehaviour
                     var temp = _GameLeveData.data[i];
                     temp.itsBadge = true;
                     _GameLeveData.data[i] = temp;
+
+                    backToMap.SetActive(true); // marking additions made by me (niki)
 
                     Debug.Log("Unlocking badge for category: " + currentGameData.selectedCatagoryName);
                     BadgeManager.Instance.UnlockBadge(currentGameData.selectedCatagoryName);

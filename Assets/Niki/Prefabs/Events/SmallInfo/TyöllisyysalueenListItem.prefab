@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 6115080147689621970}
   - component: {fileID: 8092601151448631404}
   m_Layer: 5
-  m_Name: PikkuSumppiListItem
+  m_Name: "Ty\xF6llisyysalueenListItem"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -199,8 +199,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81c51f757fd673746bbbb6210e767f69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  linkedMarker: {fileID: 2147350033808795455, guid: 35504d87d05be054594bfd79de85334f, type: 3}
-  linkedInfo: {fileID: 8143744638302892622, guid: 9a7b7a815fbfc1247a8e577c555bf2e1, type: 3}
+  linkedMarker: {fileID: 2147350033808795455, guid: 454a7b73c192a544b8f173a422f99f97, type: 3}
+  linkedInfo: {fileID: 8143744638302892622, guid: 390c3fffe2efa6a40bc5b267674bc8e0, type: 3}
 --- !u!114 &6115080147689621970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -560,7 +560,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pikku-Sumppi
+  m_text: "Ty\xF6llisyysalueen infopiste"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6d706065d7d02a041a4947f9f1c10d04, type: 2}
   m_sharedMaterial: {fileID: -8297992635494637909, guid: 6d706065d7d02a041a4947f9f1c10d04, type: 2}
@@ -587,10 +587,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60.7
+  m_fontSize: 30.1
   m_fontSizeBase: 60.7
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -797,8 +797,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 125.66553, y: -140.37413}
-  m_SizeDelta: {x: 212.4107, y: 237.1393}
+  m_AnchoredPosition: {x: 126.23779, y: -140.37413}
+  m_SizeDelta: {x: 213.3893, y: 237.1393}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3212862910450663776
 CanvasRenderer:
@@ -828,7 +828,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e194280638514df49b0fe17aca603227, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1676f21b02fd9e245bf2f0d4c181ac7f, type: 3}
   m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -903,13 +903,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Osoite: Opettajantie 1
-
-    Aukioloaika:
-
-    Ma-Pe 8.30-14.15
-
-'
+  m_text: "Osoite: Opettajantie 1\nAukioloaika:\nMa-Pe 9.00\u201315.00\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 953dc18794b4ed14587346cc6d05e072, type: 2}
   m_sharedMaterial: {fileID: 2897510219830089573, guid: 953dc18794b4ed14587346cc6d05e072, type: 2}

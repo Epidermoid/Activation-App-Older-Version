@@ -11,23 +11,34 @@ public class PaikkaSettingToggle : MonoBehaviour
     [SerializeField] private Image set;
     [SerializeField] private TextMeshProUGUI text;
 
+    [SerializeField] private bool on = true;
+
+    
+    [SerializeField] private GameObject setObject;
+
     private MenuManager menuManager;
     private void Start()
     {
         menuManager = GameObject.Find("Canvas").GetComponent<MenuManager>();
+
+
     }
 
-    public void PlaceToggle(GameObject wanted)
+    public void PlaceToggle()
     {
-        if (!wanted.activeSelf)
+        if (!setObject.activeSelf)
         {
-            wanted.SetActive(true);
+            setObject.SetActive(true);
+
+
             set.sprite = active;
             text.color = menuManager.activeColor;
         }
-        else if (wanted.activeSelf)
+        else if (setObject.activeSelf)
         {
-            wanted.SetActive(false);
+            setObject.SetActive(false);
+
+
             set.sprite = inactive;
             text.color = menuManager.inactiveColor;
         }

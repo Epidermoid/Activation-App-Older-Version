@@ -30,6 +30,7 @@ public class EventInfo : MonoBehaviour
 
     [SerializeField] private string mgCatagory;
     [SerializeField] private string mgScene;
+    [SerializeField] private GameData wordData;
 
     private MenuManager menuManager;
 
@@ -50,7 +51,12 @@ public class EventInfo : MonoBehaviour
 
         title.text = wantedTitle;
         basicInfo.text = "Osoite: " + address + "\nAukioloaika: " + times;
-        longInfo.text = wantedInfo;
+
+        if (wantedInfo != "")
+        {
+            longInfo.text = wantedInfo;
+        }
+        
     }
 
     private void Update()
@@ -119,7 +125,7 @@ public class EventInfo : MonoBehaviour
         }
         else if (mgScene == "Word")
         {
-
+            wordData.selectedCatagoryName = mgCatagory;
         }
         else if (mgScene == "Flip")
         {

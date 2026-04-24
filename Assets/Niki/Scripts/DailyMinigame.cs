@@ -27,6 +27,7 @@ public class DailyMinigame : MonoBehaviour
         }
 
         berryText.text = PlayerPrefs.GetInt("Berry", 0).ToString();
+        PlayerPrefs.SetInt("DD", 1);
     }
 
     private void Update()
@@ -42,7 +43,7 @@ public class DailyMinigame : MonoBehaviour
         animator.Play("Wow");
         yield return new WaitForSeconds(2f);
         GameObject.Find("Canvas").GetComponent<MenuManager>().karttaButton();
-        PlayerPrefs.SetInt("DD", 1);
+        
         Destroy(gameObject);
     }
 }
