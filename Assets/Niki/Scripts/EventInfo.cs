@@ -30,6 +30,7 @@ public class EventInfo : MonoBehaviour
 
     [SerializeField] private string mgCatagory;
     [SerializeField] private string mgScene;
+    [SerializeField] private GameData wordData;
 
     private MenuManager menuManager;
 
@@ -119,7 +120,7 @@ public class EventInfo : MonoBehaviour
         }
         else if (mgScene == "Word")
         {
-
+            wordData.selectedCatagoryName = mgCatagory;
         }
         else if (mgScene == "Flip")
         {
