@@ -11,6 +11,7 @@ TagManager:
   - Shop
   - Health
   - Cafe
+  - Job
   layers:
   - Default
   - TransparentFX

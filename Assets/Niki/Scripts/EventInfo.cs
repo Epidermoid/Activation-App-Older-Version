@@ -51,7 +51,12 @@ public class EventInfo : MonoBehaviour
 
         title.text = wantedTitle;
         basicInfo.text = "Osoite: " + address + "\nAukioloaika: " + times;
-        longInfo.text = wantedInfo;
+
+        if (wantedInfo != "")
+        {
+            longInfo.text = wantedInfo;
+        }
+        
     }
 
     private void Update()
