@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -776.6859}
-  m_SizeDelta: {x: 601.8517, y: 823.3718}
+  m_AnchoredPosition: {x: 0, y: -728}
+  m_SizeDelta: {x: 601.8517, y: 782.5366}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &119396159042872706
 CanvasRenderer:
@@ -65,11 +65,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Suupohjan alueen kunnat Isojoki, Karijoki, Kauhajoki, Kristiinankaupunki,
-    Kurikka ja Teuva muodostavat Suupohjan ty\xF6llisyysalueen. Ty\xF6llisyysalueen
-    ty\xF6voimapalveluiden j\xE4rjest\xE4j\xE4n\xE4 toimii Suupohjan koulutus- ja
-    ty\xF6llisyyskuntayhtym\xE4 Vuoksi.\r\n\r\nHenkil\xF6asiakaspalvelu: 040 5478
-    375, ma-pe klo 9.00\u201315.00\r\ntyollisyysalue@vuoksi.fi\r\npuh. 040 5478 375\r\n"
+  m_text: "Description: Vaatepankki on kaikille avoin ilmainen lasten ja nuorten
+    vaatteiden, harrastusv\xE4lineiden ja lastentarvikkeiden kierr\xE4tyskeskus,
+    joka toimii paikallisten vapaaehtoisten voimin. Vaatepankki ottaa vastaan lahjoituksina
+    hyv\xE4kuntoisia, ehji\xE4 ja puhtaita vaatteita, lastentarvikkeita ja harrastusv\xE4lineit\xE4.
+    Vaatepankeilta saa kuka tahansa k\xE4yd\xE4 hakemassa ilmaiseksi tarvitsemaansa
+    Avoimissa ovissa.Kauhajoen Vaatepankilta l\xF6ytyy lasten, nuorten ja aikuisten
+    vaatteita, harrastusv\xE4lineit\xE4 sek\xE4 kodin tekstiilej\xE4. Ilmoitamme
+    Avoimista ovista somessamme. L\xE4mpim\xE4sti tervetuloa tekem\xE4\xE4n l\xF6yt\xF6j\xE4
+    tai tuomaan lahjoituksia!\r\nVaatepankki sijaitsee Vuoksin B- rakennuksen Tekomon
+    toimitilassa.\r\nSeuraa Kauhajoen Vaatepankkia:\r\nhttps://www.facebook.com/people/Momssit-Kauhajoki/61577383570980/\r\nhttps://www.instagram.com/momssit_kauhajoki"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 953dc18794b4ed14587346cc6d05e072, type: 2}
   m_sharedMaterial: {fileID: 2897510219830089573, guid: 953dc18794b4ed14587346cc6d05e072, type: 2}
@@ -96,10 +101,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30.1
+  m_fontSize: 22.8
   m_fontSizeBase: 30.1
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -114,7 +119,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 4
+  m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
@@ -132,7 +137,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -0.38406384, w: -0.19811441}
+  m_margin: {x: 0, y: 0, z: -0.38406384, w: 168.00256}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1457,8 +1462,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 133.11575, y: -150.40002}
-  m_SizeDelta: {x: 93.031, y: 105.0776}
+  m_AnchoredPosition: {x: 126.4, y: -150.4}
+  m_SizeDelta: {x: 88.284, y: 105.0776}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1382727088884453550
 CanvasRenderer:
@@ -1488,7 +1493,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1676f21b02fd9e245bf2f0d4c181ac7f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a25e6c11ad80b714fb6e6a3b9217d107, type: 3}
   m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2067,7 +2072,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ty\xF6llisyysalueen infopste"
+  m_text: Momssit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6d706065d7d02a041a4947f9f1c10d04, type: 2}
   m_sharedMaterial: {fileID: -8297992635494637909, guid: 6d706065d7d02a041a4947f9f1c10d04, type: 2}
@@ -2094,7 +2099,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35.75
+  m_fontSize: 54.55
   m_fontSizeBase: 68.18
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2130,7 +2135,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -241.21695, w: -31.612053}
+  m_margin: {x: 0, y: 0, z: -156.28928, w: -31.612053}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2149,7 +2154,7 @@ GameObject:
   - component: {fileID: 1295558616902054617}
   - component: {fileID: 796656928506635563}
   m_Layer: 5
-  m_Name: "Ty\xF6llisyydenEventInfo"
+  m_Name: MomssitEventInfo
   m_TagString: Info
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2233,12 +2238,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52948d6470c100b449727913495e8e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  linkedMarker: {fileID: 2147350033808795455, guid: 454a7b73c192a544b8f173a422f99f97, type: 3}
+  linkedMarker: {fileID: 2147350033808795455, guid: 66aa6bda598418943925a54b06dcb467, type: 3}
   title: {fileID: 5946324076684187575}
-  wantedTitle: "Ty\xF6llisyysalueen infopiste"
+  wantedTitle: Momssit
   basicInfo: {fileID: 6844211421843635316}
   address: Opettajantie 1
-  times: "Ma-Pe 9.00\u201315.00"
+  times: Ma-Pe 8.30-14.15
   longInfo: {fileID: 5190745188604472839}
   wantedInfo: 
   meters: {fileID: 5675324702142658132}
@@ -2246,8 +2251,8 @@ MonoBehaviour:
   codeInput: {fileID: 3865107633898467979}
   codeOpen: 0
   correctCode: 1234567
-  mgCatagory: Vuoksi
-  mgScene: Quiz
+  mgCatagory: Road
+  mgScene: Flip
   wordData: {fileID: 11400000, guid: 73282239ff55ff44288466b1bcd8a4af, type: 2}
   insertCodeButton: {fileID: 3083943815805379699}
   tooFarText: {fileID: 1674528584128453144}

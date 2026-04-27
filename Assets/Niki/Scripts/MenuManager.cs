@@ -56,25 +56,34 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private Color full;
     [SerializeField] private Color not;
 
-    private GameObject[] schools;
-    private GameObject[] shops;
-    private GameObject[] health;
-    private GameObject[] cafes;
+    public GameObject[] schools;
+    public GameObject[] shops;
+    public GameObject[] health;
+    public GameObject[] cafes;
+    public GameObject[] jobs;
+    public GameObject[] documentation;
+
+    public bool mapOnTop = true;
 
     private void Start()
     {
         // Lowers the map so that the directions line doesn't flicker (directions dont work in build :((((()
         GameObject.Find("Map").transform.position = new Vector3(0f, -0.1f, 0f);
 
+        mapOnTop = true;
+
         cName.text = PlayerPrefs.GetString("Name", "Nimi");
         customizeManager = GameObject.Find("-CustomizeManager").GetComponent<CustomizeManager>();
         customizeManager.equipBigAvatar.GetComponent<Image>().sprite = customizeManager.bigAvatars[PlayerPrefs.GetInt("Avatar", 0)];
         cSelInt = PlayerPrefs.GetInt("Avatar", 0);
 
+        // there has to be a better way to do this...
         schools = GameObject.FindGameObjectsWithTag("School");
         shops = GameObject.FindGameObjectsWithTag("Shop");
         health = GameObject.FindGameObjectsWithTag("Health");
         cafes = GameObject.FindGameObjectsWithTag("Cafe");
+        jobs = GameObject.FindGameObjectsWithTag("Job");
+        documentation = GameObject.FindGameObjectsWithTag("Documentation");
     }
 
     public void karttaButton()
@@ -86,6 +95,8 @@ public class MenuManager : MonoBehaviour
         paikat.SetActive(false);
         placeSettingsOpen = false;
         placeSettings.SetActive(false);
+
+        mapOnTop = true;
     }
     public void karttaButtonNoDestroy()
     {
@@ -93,6 +104,8 @@ public class MenuManager : MonoBehaviour
         paikatBottomBar.SetActive(false);
 
         paikat.SetActive(false);
+
+        mapOnTop = true;
     }
 
 
@@ -103,6 +116,8 @@ public class MenuManager : MonoBehaviour
         paikatBottomBar.SetActive(true);
 
         paikat.SetActive(true);
+
+        mapOnTop = false;
     }
 
 
@@ -138,6 +153,8 @@ public class MenuManager : MonoBehaviour
     {
         profilePage.SetActive(true);
         profilePage.GetComponent<BerryUpdater>().UpdateAmount();
+
+        mapOnTop = false;
     }
 
     public void CloseProfile()

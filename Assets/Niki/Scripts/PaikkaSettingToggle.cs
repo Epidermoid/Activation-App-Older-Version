@@ -16,12 +16,38 @@ public class PaikkaSettingToggle : MonoBehaviour
     
     [SerializeField] private GameObject setObject;
 
+    [SerializeField] GameObject[] eventsInCategory;
+
     private MenuManager menuManager;
     private void Start()
     {
         menuManager = GameObject.Find("Canvas").GetComponent<MenuManager>();
 
-
+        // not a fan of this but it has to do for now ig
+        if (gameObject.tag == "School")
+        {
+            eventsInCategory = menuManager.schools;
+        }
+        else if (gameObject.tag == "Shop")
+        {
+            eventsInCategory = menuManager.shops;
+        }
+        else if (gameObject.tag == "Health")
+        {
+            eventsInCategory = menuManager.health;
+        }
+        else if (gameObject.tag == "Cafe")
+        {
+            eventsInCategory = menuManager.cafes;
+        }
+        else if (gameObject.tag == "Job")
+        {
+            eventsInCategory = menuManager.jobs;
+        }
+        else if (gameObject.tag == "Documentation")
+        {
+            eventsInCategory = menuManager.documentation;
+        }
     }
 
     public void PlaceToggle()
@@ -33,6 +59,11 @@ public class PaikkaSettingToggle : MonoBehaviour
 
             set.sprite = active;
             text.color = menuManager.activeColor;
+
+            foreach (GameObject e in eventsInCategory)
+            {
+                e.SetActive(true);
+            }
         }
         else if (setObject.activeSelf)
         {
@@ -41,6 +72,11 @@ public class PaikkaSettingToggle : MonoBehaviour
 
             set.sprite = inactive;
             text.color = menuManager.inactiveColor;
+
+            foreach (GameObject e in eventsInCategory)
+            {
+                e.SetActive(false);
+            }
         }
     }
 }

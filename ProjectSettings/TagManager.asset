@@ -12,6 +12,7 @@ TagManager:
   - Health
   - Cafe
   - Job
+  - Documentation
   layers:
   - Default
   - TransparentFX

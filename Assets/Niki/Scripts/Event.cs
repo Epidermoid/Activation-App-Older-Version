@@ -23,9 +23,13 @@ public class Event : MonoBehaviour
 
     private void OnMouseDown()
     {
-        menuManager.paikatButton();
+        if (menuManager.mapOnTop)
+        {
+            menuManager.paikatButton();
 
-        var infoTab = Instantiate(infoPrefab, GameObject.Find("PaikatList").transform);
+            var infoTab = Instantiate(infoPrefab, GameObject.Find("PaikatList").transform);
+        }
+        
     }
 
 
