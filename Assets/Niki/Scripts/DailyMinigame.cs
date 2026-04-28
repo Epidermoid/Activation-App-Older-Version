@@ -14,15 +14,23 @@ public class DailyMinigame : MonoBehaviour
 
     [SerializeField] private Animator animator;
 
+    [SerializeField] private GameObject goBackButton;
+    [SerializeField] private GameObject areYouSure;
+
     // Start is called before the first frame update
     void Start()
     {
         for (int i = 0; i < 6; i++)
         {
-            var randomX = Random.Range(-30, 30);
-            var randomZ = Random.Range(-30, 30);
+            var camera = Camera.main;
+            var bounds = GameObject.Find("MinigameBush");
 
-            var bb = Instantiate(berry, GameObject.Find("MinigameBush").transform);
+            Debug.Log(-bounds.GetComponent<RectTransform>().rect.width / 2 + (bounds.GetComponent<RectTransform>().sizeDelta.x / 2));
+
+            var randomX = Random.Range(-60, 60);
+            var randomZ = Random.Range(-60, 45);
+
+            var bb = Instantiate(berry, bounds.transform);
             bb.transform.localPosition = new Vector3 (randomX, randomZ, 0);
         }
 
@@ -34,16 +42,37 @@ public class DailyMinigame : MonoBehaviour
     {
         if (berryAmount == 0)
         {
+            berryAmount = -1;
             StartCoroutine(End());
         }
     }
 
     IEnumerator End()
     {
+        goBackButton.SetActive(false);
         animator.Play("Wow");
+
+        PlayerPrefs.SetInt("Berry", PlayerPrefs.GetInt("Berry", 0) + 10);
+        berryText.text = PlayerPrefs.GetInt("Berry", 0).ToString();
+
         yield return new WaitForSeconds(2f);
         GameObject.Find("Canvas").GetComponent<MenuManager>().karttaButton();
         
+        Destroy(gameObject);
+    }
+
+    public void GoBack()
+    {
+        areYouSure.SetActive(true);
+    }
+
+    public void No()
+    {
+        areYouSure.SetActive(false);
+    }
+
+    public void ExitMinigame()
+    {
         Destroy(gameObject);
     }
 }
