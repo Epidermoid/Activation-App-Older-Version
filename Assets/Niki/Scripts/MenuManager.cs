@@ -121,12 +121,18 @@ public class MenuManager : MonoBehaviour
     }
 
 
+    IEnumerator MakeRoute()
+    {
+        CancelRoute();
+        yield return new WaitForSeconds(0.1f);
+        var route = Instantiate(directions);
+        cancelRouteButton.SetActive(true);
+    }
 
     // Works in editor (even the simulator) but not in build for whatever reason
     public void Route()
     {
-        var route = Instantiate(directions);
-        cancelRouteButton.SetActive(true);
+        StartCoroutine(MakeRoute());
     }
 
     public void CancelRoute()
@@ -135,18 +141,20 @@ public class MenuManager : MonoBehaviour
 
         // finds the direction waypoints and destroys them
         GameObject[] dirArr = GameObject.FindGameObjectsWithTag("Directions");
-        foreach (var dir in dirArr)
+
+        if (dirArr != null )
         {
-            Destroy(dir);
+            foreach (var dir in dirArr)
+            {
+                Destroy(dir);
+            }
+            Destroy(GameObject.Find("DirectionsInfo(Clone)"));
+            // finds the direction line and destroys it
+            Destroy(GameObject.Find("direction waypoint  entity"));
+
+            // destroys the big info in paikat
+            Destroy(activeObject);
         }
-
-        // finds the direction line and destroys it
-        Destroy(GameObject.Find("direction waypoint  entity"));
-
-        // destroys the big info in paikat
-        Destroy(activeObject);
-
-        Destroy(GameObject.Find("DirectionsInfo(Clone)"));
     }
 
     public void OpenProfile()
