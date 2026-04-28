@@ -13,9 +13,6 @@ MonoBehaviour:
   m_Name: Type Data
   m_EditorClassIdentifier: 
   data:
-  - categoryName: Health
-    question: What is the number of bones in human body
-    answer: 206
-  - categoryName: SOS
-    question: How to save unconscious person
-    answer: cpr
+  - categoryName: DocumentsAndImmigrationSupport
+    question: Kysy vastausta Agnes Szemanilta.
+    answer: koulu

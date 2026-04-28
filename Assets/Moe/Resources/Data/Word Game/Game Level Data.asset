@@ -13,15 +13,7 @@ MonoBehaviour:
   m_Name: Game Level Data
   m_EditorClassIdentifier: Assembly-CSharp::GameLevelData
   data:
-  - catagoryName: Kulttuuritalo
-    itsBadge: 0
-    boardData:
-    - {fileID: 11400000, guid: 1317f07aedd77c841a858ec02ff368c3, type: 2}
-  - catagoryName: TerveysKeskus
-    itsBadge: 0
-    boardData:
-    - {fileID: 11400000, guid: 398ae3b0d7ca0ca44b0b3be0db907f29, type: 2}
-  - catagoryName: KahvilaPikku-Sumppi
+  - catagoryName: Cafe
     itsBadge: 0
     boardData:
     - {fileID: 11400000, guid: 158906255e3b95f45b0536fb8cf0524e, type: 2}

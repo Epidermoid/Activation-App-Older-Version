@@ -13,37 +13,27 @@ MonoBehaviour:
   m_Name: QuizGameData
   m_EditorClassIdentifier: 
   data:
-  - catagoryName: Vuoksi
+  - catagoryName: WorkLife
     itsBadge: 0
     quizData:
-    - question: Who are you?
+    - question: "Mist\xE4 saat apua, jos etsit ty\xF6t\xE4?"
       answers:
-      - me
-      - you
-      - us
-      - her
-      answerIndex: 2
-    - question: Where is it?
-      answers:
-      - here
-      - moooo
-      - yes
-      - huh
+      - "Ty\xF6llisyysalueelta "
+      - 'Apteekista '
+      - Kirjastosta
+      - Koulusta
       answerIndex: 1
-  - catagoryName: Koti
-    itsBadge: 0
-    quizData:
-    - question: Kitchen?
+    - question: "Mik\xE4 paperi kertoo sinun koulutuksesta ja ty\xF6kokemuksestasi?"
       answers:
-      - yes
-      - cook
-      - bluh
-      - booo
+      - 'Kuitti '
+      - 'Ansioluettelo '
+      - 'Kartta '
+      - Opintopiste
       answerIndex: 2
-    - question: BedRoom?
+    - question: "Mist\xE4 voi etsi\xE4 avoimia ty\xF6paikkoja Suomessa?"
       answers:
-      - sleep
-      - eat
-      - die
-      - play
-      answerIndex: 1
+      - 'Poliisilaitokselta '
+      - "Kiinteist\xF6v\xE4litt\xE4j\xE4lt\xE4 "
+      - "Ty\xF6markkinatorilta"
+      - Kotoa
+      answerIndex: 3
