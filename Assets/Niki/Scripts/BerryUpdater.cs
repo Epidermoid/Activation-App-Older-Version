@@ -6,10 +6,12 @@ using UnityEngine;
 public class BerryUpdater : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI berryNumber;
+    [SerializeField] private TextMeshProUGUI redBerryNumber;
 
 
     public void UpdateAmount()
     {
         berryNumber.text = PlayerPrefs.GetInt("Berry", 0).ToString();
+        redBerryNumber.text = PlayerPrefs.GetInt("RedBerry", 0).ToString();
     }
 }

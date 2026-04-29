@@ -6,11 +6,13 @@ using UnityEngine;
 public class DailyMinigame : MonoBehaviour
 {
 
-    [SerializeField] private GameObject berry;
+    [SerializeField] private GameObject[] berrys;
 
     [SerializeField] public int berryAmount = 6;
 
     [SerializeField] public TextMeshProUGUI berryText;
+    [SerializeField] public TextMeshProUGUI berryRedText;
+
 
     [SerializeField] private Animator animator;
 
@@ -30,11 +32,19 @@ public class DailyMinigame : MonoBehaviour
             var randomX = Random.Range(-60, 60);
             var randomZ = Random.Range(-60, 45);
 
-            var bb = Instantiate(berry, bounds.transform);
+            var randomBerryInt = Random.Range(0, 100);
+            var rBerry = 0;
+            if (randomBerryInt <= 20 && randomBerryInt >= 1)
+            {
+                rBerry = 1;
+            }
+
+            var bb = Instantiate(berrys[rBerry], bounds.transform);
             bb.transform.localPosition = new Vector3 (randomX, randomZ, 0);
         }
 
         berryText.text = PlayerPrefs.GetInt("Berry", 0).ToString();
+        berryRedText.text = PlayerPrefs.GetInt("RedBerry", 0).ToString();
         PlayerPrefs.SetInt("DD", 1);
     }
 

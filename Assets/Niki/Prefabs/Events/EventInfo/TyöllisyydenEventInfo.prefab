@@ -2246,7 +2246,7 @@ MonoBehaviour:
   codeInput: {fileID: 3865107633898467979}
   codeOpen: 0
   correctCode: 1234567
-  mgCatagory: Vuoksi
+  mgCatagory: WorkLife
   mgScene: Quiz
   wordData: {fileID: 11400000, guid: 73282239ff55ff44288466b1bcd8a4af, type: 2}
   insertCodeButton: {fileID: 3083943815805379699}

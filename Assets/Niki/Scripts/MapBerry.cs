@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MapBerry : MonoBehaviour
 {
-
+    [SerializeField] private string type;
     private ConstantSpawner constantSpawner;
 
     [SerializeField] private GameObject die;
@@ -18,7 +18,7 @@ public class MapBerry : MonoBehaviour
         var ins = Instantiate(die, gameObject.transform.position, gameObject.transform.rotation);
         Destroy(ins, 1f);
         constantSpawner.ammountActive--;
-        PlayerPrefs.SetInt("Berry", PlayerPrefs.GetInt("Berry") + 1);
+        PlayerPrefs.SetInt(type, PlayerPrefs.GetInt(type) + 1);
         Destroy(gameObject);
     }
 }

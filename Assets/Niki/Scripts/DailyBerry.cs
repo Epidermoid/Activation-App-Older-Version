@@ -7,6 +7,8 @@ public class DailyBerry : MonoBehaviour, IPointerDownHandler
 {
     private DailyMinigame dailyMinigame;
 
+    [SerializeField] private string type;
+
     [SerializeField] private GameObject berryDie;
     private void Start()
     {
@@ -16,8 +18,10 @@ public class DailyBerry : MonoBehaviour, IPointerDownHandler
     public void OnPointerDown(PointerEventData eventData)
     {
         dailyMinigame.berryAmount--;
-        PlayerPrefs.SetInt("Berry", PlayerPrefs.GetInt("Berry", 0) + 1);
+        PlayerPrefs.SetInt(type, PlayerPrefs.GetInt(type, 0) + 1);
         dailyMinigame.berryText.text = PlayerPrefs.GetInt("Berry", 0).ToString();
+        dailyMinigame.berryRedText.text = PlayerPrefs.GetInt("RedBerry", 0).ToString();
+        
 
         var die = Instantiate(berryDie, GameObject.Find("MinigameBush").transform);
         die.transform.localPosition = gameObject.transform.localPosition;

@@ -27,8 +27,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.000000027678, y: 0, z: 0}
-  m_LocalScale: {x: 2.0651295, y: 2.0651295, z: 2.0651295}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.0651, y: 2.0651, z: 2.0651}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 917158332078761339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 1deb59f1c3b92a84f8f14fac08600968, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2cad5fd7307d4434e92568918c401004, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -191,8 +191,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 7.5897484, y: 7.5738316, z: 1}
-  m_Center: {x: -0.015917778, y: -0.007958889, z: 0}
+  m_Size: {x: 9.852364, y: 9.852364, z: 0.9999999}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5217254480308809651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,4 +244,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 529db5f56f0f6f949812790c1931db69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: Berry
   die: {fileID: 8612890922088130276, guid: 46590c93f363ac44fb8c22cc51a998a3, type: 3}
