@@ -35,8 +35,12 @@ public class ConstantSpawner : MonoBehaviour
             {
                 rBerry = 1;
             }
+            else if (randomBerryInt == 0)
+            {
+                rBerry = 2;
+            }
 
-            var cSpawn = Instantiate(spawn[rBerry], new Vector3(playerX + randomX, 5f, playerZ + randomZ), gameObject.transform.rotation);
+                var cSpawn = Instantiate(spawn[rBerry], new Vector3(playerX + randomX, 5f, playerZ + randomZ), gameObject.transform.rotation);
 
             Debug.Log(randomBerryInt);
 

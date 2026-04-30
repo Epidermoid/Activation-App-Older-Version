@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2692897410636271935}
   - component: {fileID: 7653494549734038399}
   m_Layer: 5
-  m_Name: Berry
+  m_Name: BerryGold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,14 +61,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.5904734, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2cad5fd7307d4434e92568918c401004, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dbbacf48e1d1aad42bf39b4709b42e5d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -138,5 +138,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c23772976f16f374ab96f5a33c81a7c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: Berry
-  berryDie: {fileID: 2402116957813447594, guid: 90309f025c848064189e22f74fb72447, type: 3}
+  type: GoldBerry
+  berryDie: {fileID: 2402116957813447594, guid: c12a1349b3e97c24fa147a755b4a6855, type: 3}

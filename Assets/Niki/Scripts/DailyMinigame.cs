@@ -12,6 +12,7 @@ public class DailyMinigame : MonoBehaviour
 
     [SerializeField] public TextMeshProUGUI berryText;
     [SerializeField] public TextMeshProUGUI berryRedText;
+    [SerializeField] public TextMeshProUGUI berryGoldText;
 
 
     [SerializeField] private Animator animator;
@@ -38,6 +39,10 @@ public class DailyMinigame : MonoBehaviour
             {
                 rBerry = 1;
             }
+            else if (randomBerryInt == 0)
+            {
+                rBerry = 2;
+            }
 
             var bb = Instantiate(berrys[rBerry], bounds.transform);
             bb.transform.localPosition = new Vector3 (randomX, randomZ, 0);
@@ -45,6 +50,7 @@ public class DailyMinigame : MonoBehaviour
 
         berryText.text = PlayerPrefs.GetInt("Berry", 0).ToString();
         berryRedText.text = PlayerPrefs.GetInt("RedBerry", 0).ToString();
+        berryGoldText.text = PlayerPrefs.GetInt("GoldBerry", 0).ToString();
         PlayerPrefs.SetInt("DD", 1);
     }
 
@@ -62,8 +68,7 @@ public class DailyMinigame : MonoBehaviour
         goBackButton.SetActive(false);
         animator.Play("Wow");
 
-        PlayerPrefs.SetInt("Berry", PlayerPrefs.GetInt("Berry", 0) + 10);
-        berryText.text = PlayerPrefs.GetInt("Berry", 0).ToString();
+
 
         yield return new WaitForSeconds(2f);
         GameObject.Find("Canvas").GetComponent<MenuManager>().karttaButton();
