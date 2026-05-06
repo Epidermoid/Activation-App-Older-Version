@@ -31,6 +31,7 @@ public class MenuManager : MonoBehaviour
 
     [SerializeField] private GameObject characterSelect;
     [SerializeField] private bool characterSelectOpen = false;
+    [SerializeField] private GameObject unlock;
     
 
     [SerializeField] private GameObject nameEdit;
@@ -256,10 +257,24 @@ public class MenuManager : MonoBehaviour
 
         Debug.Log(cS);
         customizeManager.equipBigAvatar.GetComponent<Image>().sprite = customizeManager.bigAvatars[cS];
-        customizeManager.bigAvatarSlot.GetComponent<Image>().sprite = customizeManager.bigAvatars[cS];
-        customizeManager.mapAvatar.GetComponent<SpriteRenderer>().sprite = customizeManager.mapAvatars[cS];
+
         cSelInt = cS;
-        PlayerPrefs.SetInt("Avatar", cS);
+
+        if (PlayerPrefs.GetInt("AvatarUnlocked" + (cS + 1), 0) == 1)
+        {
+            unlock.SetActive(false);
+
+            customizeManager.bigAvatarSlot.GetComponent<Image>().sprite = customizeManager.bigAvatars[cS];
+            customizeManager.mapAvatar.GetComponent<SpriteRenderer>().sprite = customizeManager.mapAvatars[cS];
+            
+            PlayerPrefs.SetInt("Avatar", cS);
+
+            Debug.Log("Unlocked");
+        }
+        else if (PlayerPrefs.GetInt("AvatarUnlocked" + (cS + 1), 0) == 0)
+        {
+            unlock.SetActive(true);
+        }
     }
 
     public void CSelectScrollRight()
@@ -273,10 +288,49 @@ public class MenuManager : MonoBehaviour
 
         Debug.Log(cS);
         customizeManager.equipBigAvatar.GetComponent<Image>().sprite = customizeManager.bigAvatars[cS];
-        customizeManager.bigAvatarSlot.GetComponent<Image>().sprite = customizeManager.bigAvatars[cS];
-        customizeManager.mapAvatar.GetComponent<SpriteRenderer>().sprite = customizeManager.mapAvatars[cS];
+
         cSelInt = cS;
-        PlayerPrefs.SetInt("Avatar", cS);
+
+        if (PlayerPrefs.GetInt("AvatarUnlocked" + (cS + 1), 0) == 1)
+        {
+            unlock.SetActive(false);
+
+            customizeManager.bigAvatarSlot.GetComponent<Image>().sprite = customizeManager.bigAvatars[cS];
+            customizeManager.mapAvatar.GetComponent<SpriteRenderer>().sprite = customizeManager.mapAvatars[cS];
+            
+            PlayerPrefs.SetInt("Avatar", cS);
+
+            Debug.Log("Unlocked");
+        }
+        else if (PlayerPrefs.GetInt("AvatarUnlocked" + (cS + 1), 0) == 0)
+        {
+            unlock.SetActive(true);
+
+            
+        }
+        
+    }
+
+    public void Unlock()
+    {
+        if (PlayerPrefs.GetInt("Berry", 0) >= 1000)
+        {
+            unlock.SetActive(false);
+
+            PlayerPrefs.SetInt("Berry", PlayerPrefs.GetInt("Berry", 0) - 100);
+
+            PlayerPrefs.SetInt("AvatarUnlocked" + (cSelInt + 1), 1);
+
+            customizeManager.bigAvatarSlot.GetComponent<Image>().sprite = customizeManager.bigAvatars[cSelInt];
+            customizeManager.mapAvatar.GetComponent<SpriteRenderer>().sprite = customizeManager.mapAvatars[cSelInt];
+
+            PlayerPrefs.SetInt("Avatar", cSelInt);
+        }
+        else if (PlayerPrefs.GetInt("Berry", 0) < 1000)
+        {
+
+        }
+
     }
 
 
