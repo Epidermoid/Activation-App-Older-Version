@@ -22,8 +22,11 @@ public class SmallEventInfo : MonoBehaviour
 
     public void SmallGoButton()
     {
-
-        StartCoroutine(wait());
+        if (!menuManager.routing)
+        {
+            StartCoroutine(wait());
+        }
+        
         
     }
 

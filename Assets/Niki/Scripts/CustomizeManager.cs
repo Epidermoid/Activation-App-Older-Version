@@ -17,7 +17,7 @@ public class CustomizeManager : MonoBehaviour
         PlayerPrefs.SetInt("AvatarUnlocked1", 1);
         PlayerPrefs.SetInt("AvatarUnlocked2", 1);
         PlayerPrefs.SetInt("AvatarUnlocked3", 1);
-        //PlayerPrefs.SetInt("AvatarUnlocked4", 0);
+        PlayerPrefs.SetInt("AvatarUnlocked4", 0);
 
         SetAvatar();
     }

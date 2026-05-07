@@ -82,20 +82,24 @@ public class EventInfo : MonoBehaviour
 
     public void GoButton()
     {
-        // Changes the objects tag from info to active so that it's not destroyed by closing the paikat menu
-        gameObject.tag = "Active";
-        menuManager.karttaButtonNoDestroy();
+        if (!menuManager.routing)
+        {
+            // Changes the objects tag from info to active so that it's not destroyed by closing the paikat menu
+            gameObject.tag = "Active";
+            menuManager.karttaButtonNoDestroy();
 
-        // instatiates the UI element that tells you where you are going
-        var directions = Instantiate(dir, GameObject.Find("DirSpot").transform);
+            // instatiates the UI element that tells you where you are going
+            var directions = Instantiate(dir, GameObject.Find("DirSpot").transform);
 
-        directions.gameObject.transform.Find("Title").GetComponent<TextMeshProUGUI>().text = title.text;
+            directions.gameObject.transform.Find("Title").GetComponent<TextMeshProUGUI>().text = title.text;
 
-        menuManager.activeObject = gameObject;
+            menuManager.activeObject = gameObject;
 
-        menuManager.dirTarget = linkedMarker;
+            menuManager.dirTarget = linkedMarker;
+
+            menuManager.Route();
+        }
         
-        menuManager.Route();
         
     }
 

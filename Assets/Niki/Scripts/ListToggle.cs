@@ -6,8 +6,6 @@ public class ListToggle : MonoBehaviour
 {
     private bool toggle = false;
 
-    [SerializeField] private GameObject down;
-    [SerializeField] private GameObject up;
 
     [SerializeField] private List<GameObject> objects = new List<GameObject>();
 
@@ -20,8 +18,7 @@ public class ListToggle : MonoBehaviour
             {
                 obj.SetActive(false);
             }
-            down.SetActive(false);
-            up.SetActive(true);
+
 
             toggle = true;
         }
@@ -31,8 +28,7 @@ public class ListToggle : MonoBehaviour
             {
                 obj.SetActive(true);
             }
-            down.SetActive(true);
-            up.SetActive(false);
+
 
             toggle = false;
         }

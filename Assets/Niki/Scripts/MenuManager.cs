@@ -17,8 +17,9 @@ public class MenuManager : MonoBehaviour
 
     public GameObject dirTarget;
 
+    public bool routing = false;
+
     [SerializeField] private GameObject directions;
-    [SerializeField] private GameObject cancelRouteButton;
 
     public GameObject activeObject;
 
@@ -47,6 +48,9 @@ public class MenuManager : MonoBehaviour
 
     public Color activeColor;
     public Color inactiveColor;
+
+    public Color litUp;
+    public Color dark;
 
     private CustomizeManager customizeManager;
     private int cSelInt;
@@ -124,21 +128,23 @@ public class MenuManager : MonoBehaviour
 
     IEnumerator MakeRoute()
     {
-        CancelRoute();
+        routing = true;
+        //CancelRoute();
         yield return new WaitForSeconds(0.1f);
         var route = Instantiate(directions);
-        cancelRouteButton.SetActive(true);
+
     }
 
     // Works in editor (even the simulator) but not in build for whatever reason
     public void Route()
     {
+        if (!routing)
         StartCoroutine(MakeRoute());
     }
 
     public void CancelRoute()
     {
-        cancelRouteButton.SetActive(false);
+
 
         // finds the direction waypoints and destroys them
         GameObject[] dirArr = GameObject.FindGameObjectsWithTag("Directions");
@@ -269,11 +275,14 @@ public class MenuManager : MonoBehaviour
             
             PlayerPrefs.SetInt("Avatar", cS);
 
+            customizeManager.equipBigAvatar.GetComponent<Image>().color = litUp;
+
             Debug.Log("Unlocked");
         }
         else if (PlayerPrefs.GetInt("AvatarUnlocked" + (cS + 1), 0) == 0)
         {
             unlock.SetActive(true);
+            customizeManager.equipBigAvatar.GetComponent<Image>().color = dark;
         }
     }
 
@@ -300,13 +309,14 @@ public class MenuManager : MonoBehaviour
             
             PlayerPrefs.SetInt("Avatar", cS);
 
+            customizeManager.equipBigAvatar.GetComponent<Image>().color = litUp;
+
             Debug.Log("Unlocked");
         }
         else if (PlayerPrefs.GetInt("AvatarUnlocked" + (cS + 1), 0) == 0)
         {
             unlock.SetActive(true);
-
-            
+            customizeManager.equipBigAvatar.GetComponent<Image>().color = dark;
         }
         
     }
@@ -325,6 +335,8 @@ public class MenuManager : MonoBehaviour
             customizeManager.mapAvatar.GetComponent<SpriteRenderer>().sprite = customizeManager.mapAvatars[cSelInt];
 
             PlayerPrefs.SetInt("Avatar", cSelInt);
+
+            customizeManager.equipBigAvatar.GetComponent<Image>().color = litUp;
         }
         else if (PlayerPrefs.GetInt("Berry", 0) < 1000)
         {

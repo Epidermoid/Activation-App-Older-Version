@@ -32,10 +32,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 5230893068931340862}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -776.6859}
-  m_SizeDelta: {x: 601.8517, y: 823.3718}
+  m_AnchoredPosition: {x: 3.979, y: -15.024048}
+  m_SizeDelta: {x: 609.81, y: -699.962}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &119396159042872706
 CanvasRenderer:
@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Lis\xE4tiedot ja linkit. "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 953dc18794b4ed14587346cc6d05e072, type: 2}
-  m_sharedMaterial: {fileID: 2897510219830089573, guid: 953dc18794b4ed14587346cc6d05e072, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2a2c99cd07ac2df40a8a3645f6862d5e, type: 2}
+  m_sharedMaterial: {fileID: 1151142704507650390, guid: 2a2c99cd07ac2df40a8a3645f6862d5e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -357,8 +357,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -171.71011, y: 44.19995}
-  m_SizeDelta: {x: 139.3786, y: 30}
+  m_AnchoredPosition: {x: -202, y: 63}
+  m_SizeDelta: {x: 150.4, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6001406040798971772
 CanvasRenderer:
@@ -488,7 +488,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 227.4, y: 108.7}
+  m_AnchoredPosition: {x: -150, y: 62}
   m_SizeDelta: {x: 150.74, y: 46.284912}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3949875707697793154
@@ -1424,7 +1424,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 65, y: 53}
+  m_AnchoredPosition: {x: 65, y: 70}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9161637421382116727
@@ -1901,7 +1901,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -109.0625, y: 207.18536}
+  m_AnchoredPosition: {x: -125, y: 173}
   m_SizeDelta: {x: 93.6067, y: 53.3452}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8833162605990623483
@@ -2244,5 +2244,6 @@ MonoBehaviour:
   correctCode: 1234567
   mgCatagory: Health
   mgScene: Type
+  wordData: {fileID: 0}
   insertCodeButton: {fileID: 3336823030956171660}
   tooFarText: {fileID: 5181499764892529418}
