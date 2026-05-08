@@ -27,8 +27,8 @@ public class MenuManager : MonoBehaviour
 
     [SerializeField] private GameObject characterBottomBar;
     [SerializeField] private GameObject advancementsBottomBar;
-    [SerializeField] private GameObject characterBackground;
-    [SerializeField] private GameObject bottomStuff;
+
+    [SerializeField] private GameObject achievementsPage;
 
     [SerializeField] private GameObject characterSelect;
     [SerializeField] private bool characterSelectOpen = false;
@@ -192,20 +192,18 @@ public class MenuManager : MonoBehaviour
 
     public void OpenCharacterPage()
     {
-        characterBackground.SetActive(true);
+        achievementsPage.SetActive(false);
+
         characterBottomBar.SetActive(true);
-        bottomStuff.SetActive(true);
         advancementsBottomBar.SetActive(false);
-        cName.gameObject.SetActive(true);
     }
 
     public void OpenAdvancementsPage()
     {
-        characterBackground.SetActive(false);
+        achievementsPage.SetActive(true);
+
         characterBottomBar.SetActive(false);
-        bottomStuff.SetActive(false);
         advancementsBottomBar.SetActive(true);
-        cName.gameObject.SetActive(false);
     }
 
     public void OpenPlaceSettings()
