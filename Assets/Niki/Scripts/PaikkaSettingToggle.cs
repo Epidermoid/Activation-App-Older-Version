@@ -19,8 +19,11 @@ public class PaikkaSettingToggle : MonoBehaviour
     [SerializeField] GameObject[] eventsInCategory;
 
     private MenuManager menuManager;
+    private AudioManager audioManager;
+
     private void Start()
     {
+        audioManager = GameObject.Find("-AudioManager").GetComponent<AudioManager>();
         menuManager = GameObject.Find("Canvas").GetComponent<MenuManager>();
 
         // not a fan of this but it has to do for now ig
@@ -52,6 +55,7 @@ public class PaikkaSettingToggle : MonoBehaviour
 
     public void PlaceToggle()
     {
+        AudioManager.PlayPop();
         if (!setObject.activeSelf)
         {
             setObject.SetActive(true);

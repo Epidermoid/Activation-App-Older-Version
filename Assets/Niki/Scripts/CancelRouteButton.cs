@@ -36,7 +36,7 @@ public class CancelRouteButton : MonoBehaviour
                 Destroy(menuManager.activeObject);
 
                 menuManager.routing = false;
-
+                AudioManager.PlayPop();
                 Destroy(gameObject);
             }
 

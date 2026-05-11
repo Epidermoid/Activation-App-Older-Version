@@ -70,8 +70,12 @@ public class MenuManager : MonoBehaviour
 
     public bool mapOnTop = true;
 
+
+
     private void Start()
     {
+
+
         // Lowers the map so that the directions line doesn't flicker (directions dont work in build :((((()
         GameObject.Find("Map").transform.position = new Vector3(0f, -0.1f, 0f);
 
@@ -102,6 +106,8 @@ public class MenuManager : MonoBehaviour
         placeSettings.SetActive(false);
 
         mapOnTop = true;
+
+        AudioManager.PlayPop();
     }
     public void karttaButtonNoDestroy()
     {
@@ -111,6 +117,8 @@ public class MenuManager : MonoBehaviour
         paikat.SetActive(false);
 
         mapOnTop = true;
+
+        
     }
 
 
@@ -123,11 +131,14 @@ public class MenuManager : MonoBehaviour
         paikat.SetActive(true);
 
         mapOnTop = false;
+
+        AudioManager.PlayPop();
     }
 
 
     IEnumerator MakeRoute()
     {
+        AudioManager.PlayPop();
         routing = true;
         //CancelRoute();
         yield return new WaitForSeconds(0.1f);
@@ -144,7 +155,7 @@ public class MenuManager : MonoBehaviour
 
     public void CancelRoute()
     {
-
+        AudioManager.PlayPop();
 
         // finds the direction waypoints and destroys them
         GameObject[] dirArr = GameObject.FindGameObjectsWithTag("Directions");
@@ -170,6 +181,8 @@ public class MenuManager : MonoBehaviour
         profilePage.GetComponent<BerryUpdater>().UpdateAmount();
 
         mapOnTop = false;
+
+        AudioManager.PlayPop();
     }
 
     public void CloseProfile()
@@ -196,6 +209,8 @@ public class MenuManager : MonoBehaviour
 
         characterBottomBar.SetActive(true);
         advancementsBottomBar.SetActive(false);
+
+        AudioManager.PlayPop();
     }
 
     public void OpenAdvancementsPage()
@@ -204,10 +219,13 @@ public class MenuManager : MonoBehaviour
 
         characterBottomBar.SetActive(false);
         advancementsBottomBar.SetActive(true);
+
+        AudioManager.PlayPop();
     }
 
     public void OpenPlaceSettings()
     {
+        AudioManager.PlayPop();
         if (placeSettingsOpen == false)
         {
             placeSettingsOpen = true;
@@ -222,6 +240,7 @@ public class MenuManager : MonoBehaviour
 
     public void OpenCharacterSelect()
     {
+        AudioManager.PlayPop();
         if (characterSelectOpen == false)
         {
             characterSelectOpen = true;
@@ -252,6 +271,8 @@ public class MenuManager : MonoBehaviour
 
     public void CSelectScrollLeft()
     {
+        AudioManager.PlayPop();
+
         var cS = cSelInt - 1;
         
         if (cS < 0)
@@ -286,6 +307,8 @@ public class MenuManager : MonoBehaviour
 
     public void CSelectScrollRight()
     {
+        AudioManager.PlayPop();
+        
         var cS = cSelInt + 1;
 
         if (cS > customizeManager.bigAvatars.Count - 1)
@@ -321,6 +344,8 @@ public class MenuManager : MonoBehaviour
 
     public void Unlock()
     {
+        AudioManager.PlayPop();
+
         if (PlayerPrefs.GetInt("Berry", 0) >= 1000)
         {
             unlock.SetActive(false);
@@ -347,6 +372,8 @@ public class MenuManager : MonoBehaviour
 
     public void OpenNameEdit()
     {
+        AudioManager.PlayPop();
+
         if (nameEditOpen == false)
         {
             nameEditOpen = true;
@@ -382,6 +409,8 @@ public class MenuManager : MonoBehaviour
 
     public void OpenSettings()
     {
+        AudioManager.PlayPop();
+
         if (settingsOpen == false)
         {
             settingsOpen = true;

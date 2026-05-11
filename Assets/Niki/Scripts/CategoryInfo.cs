@@ -7,6 +7,7 @@ public class CategoryInfo : MonoBehaviour
 
     public void Close()
     {
+        AudioManager.PlayPop();
         Destroy(gameObject);
     }
 }

@@ -8,9 +8,16 @@ public class ListToggle : MonoBehaviour
 
 
     [SerializeField] private List<GameObject> objects = new List<GameObject>();
+    
+    private AudioManager audioManager;
+    void Start()
+    {
+        audioManager = GameObject.Find("-AudioManager").GetComponent<AudioManager>();
+    }
 
     public void Toggle()
     {
+        AudioManager.PlayPop();
         // the toggle in lists. the button itself is invisible
         if (!toggle)
         {

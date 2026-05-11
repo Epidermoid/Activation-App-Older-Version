@@ -20,9 +20,13 @@ public class DailyMinigame : MonoBehaviour
     [SerializeField] private GameObject goBackButton;
     [SerializeField] private GameObject areYouSure;
 
+    private AudioManager audioManager;
+
     // Start is called before the first frame update
     void Start()
     {
+        audioManager = GameObject.Find("-AudioManager").GetComponent<AudioManager>();
+
         for (int i = 0; i < 6; i++)
         {
             var camera = Camera.main;
@@ -78,16 +82,19 @@ public class DailyMinigame : MonoBehaviour
 
     public void GoBack()
     {
+        AudioManager.PlayPop();
         areYouSure.SetActive(true);
     }
 
     public void No()
     {
+        AudioManager.PlayPop();
         areYouSure.SetActive(false);
     }
 
     public void ExitMinigame()
     {
+        AudioManager.PlayPop();
         Destroy(gameObject);
     }
 }

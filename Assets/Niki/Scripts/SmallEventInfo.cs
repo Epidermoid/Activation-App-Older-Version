@@ -10,11 +10,13 @@ public class SmallEventInfo : MonoBehaviour
 
     private MenuManager menuManager;
 
-
+    private AudioManager audioManager;
 
     // Start is called before the first frame update
     void Start()
     {
+        audioManager = GameObject.Find("-AudioManager").GetComponent<AudioManager>();
+        
         menuManager = GameObject.Find("Canvas").GetComponent<MenuManager>();
 
         linkedMarker = GameObject.Find(linkedMarker.name + "(Clone)");
@@ -32,6 +34,8 @@ public class SmallEventInfo : MonoBehaviour
 
     IEnumerator wait()
     {
+        AudioManager.PlayPop();
+
         // no idea why it needs the slight delay to work, but it does
         var curInfo = Instantiate(linkedInfo, GameObject.Find("PaikatList").transform);
 
@@ -43,6 +47,7 @@ public class SmallEventInfo : MonoBehaviour
 
     public void OpenBigInfo()
     {
+        AudioManager.PlayPop();
         var bigInfo = Instantiate(linkedInfo, GameObject.Find("PaikatList").transform);
     }
 }

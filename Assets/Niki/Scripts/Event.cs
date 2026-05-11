@@ -8,6 +8,8 @@ public class Event : MonoBehaviour
 
     private MenuManager menuManager;
 
+    private AudioManager audioManager;
+
     [SerializeField] private SpriteRenderer iconSlot;
     [SerializeField] private Sprite wantedIcon;
 
@@ -18,13 +20,15 @@ public class Event : MonoBehaviour
 
         menuManager = GameObject.Find("Canvas").GetComponent<MenuManager>();
 
-
+        audioManager = GameObject.Find("-AudioManager").GetComponent<AudioManager>();
     }
 
     private void OnMouseDown()
     {
         if (menuManager.mapOnTop)
         {
+            AudioManager.PlayPop();
+
             menuManager.paikatButton();
 
             var infoTab = Instantiate(infoPrefab, GameObject.Find("PaikatList").transform);

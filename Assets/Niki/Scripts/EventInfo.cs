@@ -39,6 +39,7 @@ public class EventInfo : MonoBehaviour
     [SerializeField] private Button insertCodeButton;
     [SerializeField] private GameObject tooFarText;
 
+    private AudioManager audioManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,7 +48,7 @@ public class EventInfo : MonoBehaviour
         menuManager = GameObject.Find("Canvas").GetComponent<MenuManager>();
 
         linkedMarker = GameObject.Find(linkedMarker.name + "(Clone)");
-
+        audioManager = GameObject.Find("-AudioManager").GetComponent<AudioManager>();
 
         title.text = wantedTitle;
         basicInfo.text = "Osoite: " + address + "\nAukioloaika: " + times;
@@ -77,11 +78,13 @@ public class EventInfo : MonoBehaviour
 
     public void BackButton()
     {
+        AudioManager.PlayPop();
         Destroy(gameObject);
     }
 
     public void GoButton()
     {
+        AudioManager.PlayPop();
         if (!menuManager.routing)
         {
             // Changes the objects tag from info to active so that it's not destroyed by closing the paikat menu
@@ -105,6 +108,7 @@ public class EventInfo : MonoBehaviour
 
     public void OpenCode()
     {
+        AudioManager.PlayPop();
         if (codeOpen == false)
         {
             codeInput.SetActive(true);

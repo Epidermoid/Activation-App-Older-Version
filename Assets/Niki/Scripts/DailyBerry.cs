@@ -17,6 +17,7 @@ public class DailyBerry : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        AudioManager.PlayPop();
         dailyMinigame.berryAmount--;
         PlayerPrefs.SetInt(type, PlayerPrefs.GetInt(type, 0) + 1);
         dailyMinigame.berryText.text = PlayerPrefs.GetInt("Berry", 0).ToString();
