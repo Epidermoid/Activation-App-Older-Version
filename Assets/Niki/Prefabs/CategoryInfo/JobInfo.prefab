@@ -65,12 +65,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "T\xE4ss\xE4 osiossa opit ty\xF6nhausta ja yritt\xE4jyydest\xE4.\r\n\nTy\xF6
-    auttaa kotoutumaan ja oppimaan kielt\xE4.\r\n\nTy\xF6nhaussa tarvitset:\r\n \u2022
-    CV:n\r\n \u2022 ty\xF6hakemuksen\r\n\nVoit hakea t\xF6it\xE4:\r\n \u2022 verkossa\r\n
-    \u2022 TE-palveluiden kautta\r\n\nLis\xE4tietoa:\r\n \u2022 TE-palvelut (https://tyomarkkinatori.fi)\r\n
-    \u2022 https://yrityssuomi.fi\r\n\nVoit my\xF6s perustaa yrityksen. Saat siihen
-    neuvontaa.\r\n"
+  m_text: "Ty\xF6 on t\xE4rke\xE4 osa kotoutumista. Suomessa ty\xF6nhaku tapahtuu
+    usein TE-palveluiden, rekrytointisivujen ja verkostojen kautta. CV ja ty\xF6hakemus
+    ovat keskeisi\xE4 ty\xF6kaluja.\n\nYritt\xE4jyys on my\xF6s hyv\xE4 vaihtoehto,
+    ja siihen saa neuvontaa yrityspalveluista.\n Lis\xE4tietoa: https://tyomarkkinatori.fi
+    | https://www.yrityssuomi.fi\n\nSuupohjassa on mahdollisuuksia eri aloilla, ja
+    paikalliset yritykset arvostavat osaamista ja motivaatiota.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 953dc18794b4ed14587346cc6d05e072, type: 2}
   m_sharedMaterial: {fileID: 2897510219830089573, guid: 953dc18794b4ed14587346cc6d05e072, type: 2}

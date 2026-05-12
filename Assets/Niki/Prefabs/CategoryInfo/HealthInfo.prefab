@@ -65,12 +65,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "T\xE4ss\xE4 osiossa opit terveyspalveluista ja hyvinvoinnista.\r\n\nVoit
-    k\xE4ytt\xE4\xE4:\r\n \u2022 terveyskeskusta\r\n \u2022 sairaalaa\r\n \u2022
-    hammasl\xE4\xE4k\xE4ri\xE4\r\n \u2022 apteekkia\r\n\nJos olet sairas, ota yhteytt\xE4
-    terveyspalveluihin.\r\n\nTukea saat my\xF6s:\r\n \u2022 Kela (https://kela.fi)\r\n\nHyvinvointiin
-    kuuluu my\xF6s:\r\n \u2022 liikunta\r\n \u2022 lepo\r\n \u2022 hyv\xE4 ravinto\r\n\nSuupohjassa
-    voit liikkua luonnossa ja k\xE4ytt\xE4\xE4 liikuntapaikkoja.\r\n"
+  m_text: "Terveyspalvelut Suomessa ovat laadukkaita ja kattavia. Julkinen terveydenhuolto
+    toimii terveyskeskusten kautta, ja kiireellisiss\xE4 tilanteissa p\xE4ivystys
+    auttaa. Lis\xE4ksi l\xF6ytyy yksityisi\xE4 l\xE4\xE4k\xE4reit\xE4, hammasl\xE4\xE4k\xE4reit\xE4
+    ja apteekkeja.\n\nKela tukee terveydenhuollon kustannuksissa.\n Lis\xE4tietoa:
+    https://www.kela.fi\n\nHyvinvointi ei ole vain terveytt\xE4 \u2013 se on my\xF6s
+    liikuntaa, lepoa ja sosiaalisia suhteita. Suupohjassa on kuntosaleja, uimahalleja
+    ja ulkoilualueita.\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 953dc18794b4ed14587346cc6d05e072, type: 2}
   m_sharedMaterial: {fileID: 2897510219830089573, guid: 953dc18794b4ed14587346cc6d05e072, type: 2}

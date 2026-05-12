@@ -65,12 +65,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "T\xE4ss\xE4 osiossa opit suomalaisesta kulttuurista ja tavoista.\r\n\nSuomessa
-    arvostetaan:\r\n \u2022 tasa-arvoa\r\n \u2022 rehellisyytt\xE4\r\n \u2022 omaa
-    rauhaa\r\nIhmiset voivat olla aluksi hiljaisia, mutta he ovat usein yst\xE4v\xE4llisi\xE4
-    ja luotettavia.\r\n\nVoit tutustua kulttuuriin esimerkiksi:\r\n \u2022 kirjastoissa\r\n
-    \u2022 tapahtumissa\r\n \u2022 kahviloissa\r\n \u2022 harrastuksissa\r\nLis\xE4tietoa
-    Suomesta: https://finland.fi\r\n\nKun opit kulttuuria, arki tuntuu helpommalta.\r\n"
+  m_text: "Suomalainen kulttuuri arvostaa tasa-arvoa, rehellisyytt\xE4 ja omaa rauhaa.
+    Ihmiset voivat vaikuttaa aluksi hiljaisilta, mutta ovat usein yst\xE4v\xE4llisi\xE4
+    ja auttavaisia.\n\nSuupohjassa paikallinen kulttuuri n\xE4kyy tapahtumissa, n\xE4yttelyiss\xE4
+    ja yhteis\xF6llisiss\xE4 tilaisuuksissa. Kirjastot, galleriat ja kulttuuritapahtumat
+    tarjoavat matalan kynnyksen mahdollisuuksia tutustua suomalaiseen el\xE4m\xE4ntapaan.\n
+    Lis\xE4tietoa kulttuurista: https://finland.fi\n\nMy\xF6s kahvilat ja yhteis\xF6tilat
+    ovat hyvi\xE4 paikkoja kohdata ihmisi\xE4.\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 953dc18794b4ed14587346cc6d05e072, type: 2}
   m_sharedMaterial: {fileID: 2897510219830089573, guid: 953dc18794b4ed14587346cc6d05e072, type: 2}

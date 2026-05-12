@@ -65,18 +65,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "T\xE4ss\xE4 osiossa opit, mit\xE4 asioita hoidat, kun muutat Suupohjaan.
-    Saat tietoa arjen ensimm\xE4isist\xE4 askelista ja t\xE4rkeist\xE4 palveluista.\n\nEnsimm\xE4isin\xE4
-    p\xE4ivin\xE4 hoidat monia k\xE4yt\xE4nn\xF6n asioita.\r\n Sinun t\xE4ytyy esimerkiksi:\r\n
-    \u2022 rekister\xF6id\xE4 osoitteesi\r\n \u2022 avata pankkitili\r\n \u2022 hankkia
-    puhelinliittym\xE4\r\n \u2022 opetella liikkumaan uudessa paikassa\r\n\nViranomaiset
-    auttavat sinua alussa.\r\n T\xE4rkeit\xE4 viranomaisia ovat esimerkiksi:\r\n
-    \u2022 Digi- ja v\xE4est\xF6tietovirasto \u2013 osoitteen rekister\xF6inti (https://dvv.fi)\r\n
-    \u2022 Maahanmuuttovirasto \u2013 oleskelulupa ja kansalaisuus (https://migri.fi)\r\n
-    \u2022 Verohallinto \u2013 verokortti ja verot (https://vero.fi)\r\n \u2022 Poliisi
-    \u2013 henkil\xF6kortti ja passi (https://poliisi.fi)\r\n \u2022 Kela \u2013
-    tuet ja etuudet (https://kela.fi)\r\n\nKaikkea ei tarvitse osata heti. Arki helpottuu
-    v\xE4hitellen.\r"
+  m_text: "Uusi alku Suupohjassa alkaa arjen perusasioista: asuminen, rekister\xF6ityminen
+    ja paikallisten palveluiden l\xF6yt\xE4minen. Muuttaessasi Suomeen sinun tulee
+    rekister\xF6id\xE4 oleskelusi ja osoitteesi sek\xE4 hankkia suomalainen henkil\xF6tunnus.
+    Digi- ja v\xE4est\xF6tietovirasto (DVV) ja Maahanmuuttovirasto (Migri) auttavat
+    n\xE4iss\xE4 vaiheissa.\nLis\xE4tietoa: https://dvv.fi | https://migri.fi\n\nSuupohjassa
+    el\xE4m\xE4 on rauhallista, luonto l\xE4hell\xE4 ja palvelut helposti saavutettavissa.
+    Sovellus auttaa l\xF6yt\xE4m\xE4\xE4n esimerkiksi vuokra-asuntoja, postipalvelut,
+    pankit sek\xE4 ensimm\xE4iset t\xE4rke\xE4t asiointipaikat. Muuton alkuvaiheessa
+    kannattaa my\xF6s tutustua kirjastoihin ja neuvontapisteisiin, joissa saa maksutonta
+    ohjausta.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 953dc18794b4ed14587346cc6d05e072, type: 2}
   m_sharedMaterial: {fileID: 2897510219830089573, guid: 953dc18794b4ed14587346cc6d05e072, type: 2}
