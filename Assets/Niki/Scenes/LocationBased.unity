@@ -463,6 +463,7 @@ MonoBehaviour:
   value: 100
   type: Berry
   id: 1
+  anim: {fileID: 967007314995712677, guid: 5d7dbbbc83b8116268566498f8b0a0ac, type: 3}
 --- !u!114 &17762539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6268,6 +6269,7 @@ MonoBehaviour:
   value: 100
   type: Berry
   id: 0
+  anim: {fileID: 967007314995712677, guid: 5d7dbbbc83b8116268566498f8b0a0ac, type: 3}
 --- !u!114 &468147051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15084,6 +15086,7 @@ MonoBehaviour:
   value: 100
   type: Berry
   id: 2
+  anim: {fileID: 967007314995712677, guid: 5d7dbbbc83b8116268566498f8b0a0ac, type: 3}
 --- !u!114 &1372438068
 MonoBehaviour:
   m_ObjectHideFlags: 0
