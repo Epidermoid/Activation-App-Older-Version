@@ -6,6 +6,7 @@ public class SearchingWordsList : MonoBehaviour
     public GameData currentGameData;
     public GameObject searchingWordPrefab;
     public float offset;
+    public float wordStartPoition;
     public int maxColumns = 5;
     public int maxRows = 4;
 
@@ -173,7 +174,9 @@ public class SearchingWordsList : MonoBehaviour
 
         startPosition.x = ((parentRect.rect.width - squareSize.x) / 2) * (-1);
         startPosition.x += shiftBy;
-        startPosition.y = (parentRect.rect.height - squareSize.y) / 2;
+
+        //I changed this to make the words display lower
+        startPosition.y = (parentRect.rect.height - squareSize.y) / 2 - wordStartPoition;
 
         return startPosition;
     }

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c536f4c7f0e289243867921fa5f4690c, type: 3}
   m_Name: CurrentGameData
   m_EditorClassIdentifier: Assembly-CSharp::GameData
-  selectedCatagoryName: Try
-  selectedBoardData: {fileID: 11400000, guid: 1e8a07a65518981448c4e9d9537fcd7c, type: 2}
+  selectedCatagoryName: Cafe
+  selectedBoardData: {fileID: 11400000, guid: 158906255e3b95f45b0536fb8cf0524e, type: 2}

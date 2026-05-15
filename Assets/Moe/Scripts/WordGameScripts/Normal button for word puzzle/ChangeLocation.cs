@@ -5,6 +5,7 @@ using UnityEngine;
 public class ChangeLocation : MonoBehaviour
 {
     public GameObject targetObject; // Assign the target object in the Inspector
+    public GameObject targetObject2;
     public void SetRectTransformLeftRight(float left, float right)
     {
         RectTransform rectTransform = GetComponent<RectTransform>();
@@ -24,6 +25,7 @@ public class ChangeLocation : MonoBehaviour
     {
         SetRectTransformLeftRight(0, 0);
         targetObject.SetActive(false);
+        targetObject2.SetActive(false);
     }
 
     [ContextMenu("Set RectTransform to 1083, -1083")]
@@ -31,5 +33,8 @@ public class ChangeLocation : MonoBehaviour
     {
         SetRectTransformLeftRight(1083, -1083);
             targetObject.SetActive(true);
+        targetObject2.SetActive(true);
+
+        Debug.Log("RectTransform set to 1083, -1083");
     }
 }

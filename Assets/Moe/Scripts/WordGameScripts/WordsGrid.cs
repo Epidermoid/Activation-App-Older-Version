@@ -10,7 +10,8 @@ public class WordsGrid : MonoBehaviour
     public GameObject gridSquarePrefab;
     public AlphabetData alphabetData;
 
-    private float squareOffset = 0.3f;
+    //Gap between words
+    private float squareOffset = 0.1f;
     public float topPosition;
 
     private List<GameObject> _squareList = new List<GameObject>();
