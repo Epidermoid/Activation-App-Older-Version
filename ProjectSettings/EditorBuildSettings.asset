@@ -29,4 +29,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Mapbox/Examples/0_PrefabScenes/Location-basedGame.unity
     guid: 42f6aa7ce7a604f16ade319663f46ceb
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 7fd5e10830c22128e9d1c9b9f46278d3, type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 23cc500bce9ab2ed5b9cf9a59fcdd6db, type: 2}

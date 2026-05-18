@@ -65,16 +65,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Description: Vaatepankki on kaikille avoin ilmainen lasten ja nuorten
-    vaatteiden, harrastusv\xE4lineiden ja lastentarvikkeiden kierr\xE4tyskeskus,
-    joka toimii paikallisten vapaaehtoisten voimin. Vaatepankki ottaa vastaan lahjoituksina
-    hyv\xE4kuntoisia, ehji\xE4 ja puhtaita vaatteita, lastentarvikkeita ja harrastusv\xE4lineit\xE4.
-    Vaatepankeilta saa kuka tahansa k\xE4yd\xE4 hakemassa ilmaiseksi tarvitsemaansa
-    Avoimissa ovissa.Kauhajoen Vaatepankilta l\xF6ytyy lasten, nuorten ja aikuisten
-    vaatteita, harrastusv\xE4lineit\xE4 sek\xE4 kodin tekstiilej\xE4. Ilmoitamme
-    Avoimista ovista somessamme. L\xE4mpim\xE4sti tervetuloa tekem\xE4\xE4n l\xF6yt\xF6j\xE4
-    tai tuomaan lahjoituksia!\r\nVaatepankki sijaitsee Vuoksin B- rakennuksen Tekomon
-    toimitilassa.\r\nSeuraa Kauhajoen Vaatepankkia:\r\nhttps://www.facebook.com/people/Momssit-Kauhajoki/61577383570980/\r\nhttps://www.instagram.com/momssit_kauhajoki"
+  m_text: "Vaatepankki on kaikille avoin ilmainen lasten ja nuorten vaatteiden, harrastusv\xE4lineiden
+    ja lastentarvikkeiden kierr\xE4tyskeskus, joka toimii paikallisten vapaaehtoisten
+    voimin. Vaatepankki ottaa vastaan lahjoituksina hyv\xE4kuntoisia, ehji\xE4 ja
+    puhtaita vaatteita, lastentarvikkeita ja harrastusv\xE4lineit\xE4. Vaatepankeilta
+    saa kuka tahansa k\xE4yd\xE4 hakemassa ilmaiseksi tarvitsemaansa Avoimissa ovissa.Kauhajoen
+    Vaatepankilta l\xF6ytyy lasten, nuorten ja aikuisten vaatteita, harrastusv\xE4lineit\xE4
+    sek\xE4 kodin tekstiilej\xE4. Ilmoitamme Avoimista ovista somessamme. L\xE4mpim\xE4sti
+    tervetuloa tekem\xE4\xE4n l\xF6yt\xF6j\xE4 tai tuomaan lahjoituksia!\r\nVaatepankki
+    sijaitsee Vuoksin B- rakennuksen Tekomon toimitilassa.\r\nSeuraa Kauhajoen Vaatepankkia:\r\nhttps://www.facebook.com/people/Momssit-Kauhajoki/61577383570980/\r\nhttps://www.instagram.com/momssit_kauhajoki"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 953dc18794b4ed14587346cc6d05e072, type: 2}
   m_sharedMaterial: {fileID: 2897510219830089573, guid: 953dc18794b4ed14587346cc6d05e072, type: 2}

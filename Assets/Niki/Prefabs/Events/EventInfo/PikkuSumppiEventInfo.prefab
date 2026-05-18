@@ -65,7 +65,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Lis\xE4tiedot ja linkit. "
+  m_text: "Kahvilassa on myynniss\xE4 kahvia, teet\xE4 sek\xE4 erilaisia virvoitusjuomia
+    sek\xE4 suolaista ja makeaa sy\xF6t\xE4v\xE4\xE4."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 953dc18794b4ed14587346cc6d05e072, type: 2}
   m_sharedMaterial: {fileID: 2897510219830089573, guid: 953dc18794b4ed14587346cc6d05e072, type: 2}
@@ -2236,8 +2237,7 @@ MonoBehaviour:
   address: Opettajantie 1
   times: Ma-Pe 8.30-14.15
   longInfo: {fileID: 5190745188604472839}
-  wantedInfo: "Kahvilassa on myynniss\xE4 kahvia, teet\xE4 sek\xE4 erilaisia virvoitusjuomia
-    sek\xE4 suolaista ja makeaa sy\xF6t\xE4v\xE4\xE4."
+  wantedInfo: 
   meters: {fileID: 5675324702142658132}
   dir: {fileID: 1677037624448271006, guid: d71ee03cc15fa7a4987513a8f7fdc0f7, type: 3}
   codeInput: {fileID: 3865107633898467979}

@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Languages_fi
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fi
+  m_SharedData: {fileID: 11400000, guid: 619a73ba34ec07eee83170572881da34, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 761455538176
+    m_Localized: PAIKAT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5846529044480
+    m_Localized: HAHMO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6242613948416
+    m_Localized: KARTTA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6457026768896
+    m_Localized: SAAVUTUKSET
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10052338020352
+    m_Localized: Asetukset
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30598224244736
+    m_Localized: Kieli
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51446310072320
+    m_Localized: Suomi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72046021799936
+    m_Localized: Lunasta Palkinto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73696279097344
+    m_Localized: Lunastettavat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74483197636608
+    m_Localized: Suoritetut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74960643649536
+    m_Localized: Ei Valmiit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76394529386496
+    m_Localized: "K\xE4vit hotspotilla"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81443418632192
+    m_Localized: "K\xE4y hotspotilla"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82117820772352
+    m_Localized: "K\xE4vit kolmella hotspotilla"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82560630222848
+    m_Localized: "K\xE4y kolmella hotspotilla"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83061836967936
+    m_Localized: "L\xF6ysit lakan"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83402586419200
+    m_Localized: "L\xF6yd\xE4 lakka"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
