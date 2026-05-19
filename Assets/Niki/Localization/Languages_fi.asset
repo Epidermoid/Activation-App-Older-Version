@@ -86,6 +86,119 @@ MonoBehaviour:
     m_Localized: "L\xF6yd\xE4 lakka"
     m_Metadata:
       m_Items: []
+  - m_Id: 366009677082624
+    m_Localized: Hae...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 366789259784192
+    m_Localized: Kahvilat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 367020693090304
+    m_Localized: Opiskelu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 367158748606464
+    m_Localized: "Ty\xF6llistyminen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 367356803641344
+    m_Localized: Documentaatio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 367539801124864
+    m_Localized: Kaupat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 367686673068032
+    m_Localized: Terveys
+    m_Metadata:
+      m_Items: []
+  - m_Id: 369975932579840
+    m_Localized: 'Osoite: Opettajantie 1
+
+      Aukioloaika:
+
+      Ma-Pe 8.30-14.15'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370553614069760
+    m_Localized: Reittiohjeet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372571950903296
+    m_Localized: "Ty\xF6llisyysalueen infopiste"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373785564377088
+    m_Localized: "Osoite: Opettajantie 1\nAukioloaika:\nMa-Pe 9.00\u201315.00\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 377716520611840
+    m_Localized: "Kansainv\xE4lisyyspalvelut"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 378551954665472
+    m_Localized: "Osoite: Opettajantie 1\nAukioloaika:\nMa-Pe 6.00\u201316.00\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382240962473984
+    m_Localized: 'Osoite: Puistotie 60
+
+      Aukioloaika: 8:00 - 21:00
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 387045499957248
+    m_Localized: "Osoite:  Pr\xE4nn\xE4rintie 8\nAukioloaika: 8:00 - 17:30"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390752748793856
+    m_Localized: "\xC4\xE4ni"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 430910730760192
+    m_Localized: "Lis\xE4tiedot ja linkit"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 431532683128832
+    m_Localized: Liian kaukana!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 431681606086656
+    m_Localized: Pelaa Minipeli
+    m_Metadata:
+      m_Items: []
+  - m_Id: 432053414359040
+    m_Localized: Kirjoita koodi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 434754164453376
+    m_Localized: "Takaisin\nkarttan\xE4kym\xE4\xE4n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 434974201835520
+    m_Localized: ETSI MARJAT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 435227751706624
+    m_Localized: "Kaikki marjat l\xF6ydetty!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 435394865360896
+    m_Localized: "T\xE4m\xE4n minipelin voi pelata vain kerran p\xE4iv\xE4ss\xE4,
+      oletko vatma ett\xE4 haluat poistua?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 435682779164672
+    m_Localized: En
+    m_Metadata:
+      m_Items: []
+  - m_Id: 435778056974336
+    m_Localized: "Kyll\xE4"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

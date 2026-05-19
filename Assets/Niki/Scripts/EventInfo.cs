@@ -50,6 +50,7 @@ public class EventInfo : MonoBehaviour
         linkedMarker = GameObject.Find(linkedMarker.name + "(Clone)");
         audioManager = GameObject.Find("-AudioManager").GetComponent<AudioManager>();
 
+        /*
         title.text = wantedTitle;
         basicInfo.text = "Osoite: " + address + "\nAukioloaika: " + times;
 
@@ -57,7 +58,7 @@ public class EventInfo : MonoBehaviour
         {
             longInfo.text = wantedInfo;
         }
-        
+        */
     }
 
     private void Update()

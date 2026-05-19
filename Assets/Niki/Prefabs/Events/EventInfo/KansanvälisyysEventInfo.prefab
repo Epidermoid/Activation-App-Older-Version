@@ -65,15 +65,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Vuoksin maahanmuuttokoordinoinnin palvelut toimivat matalan kynnyksen
-    neuvontapisteen\xE4, joka tarjoaa maahan muuttaneille tietoa suomalaisen yhteiskunnan
-    palveluista sek\xE4 maahan muuttaneen henkil\xF6n oikeuksista ja velvollisuuksista.\r\nAutamme
-    my\xF6s ty\xF6nantajia, joilla on ulkomaalaistaustaista ty\xF6voimaa sek\xE4
-    yrityksi\xE4, jotka suunnittelevat ty\xF6voiman rekrytointia ulkomailta.\r\nVuoksin
-    kautta on mahdollista ostaa ty\xF6ntekij\xE4n kotoutumispaketteja tai saada apua
-    suomen kielen oppimiseen.\r\nVuoksin asiantuntija- ja neuvontapalvelut koskevat
-    my\xF6s muita toimijoita, jotka ty\xF6ss\xE4\xE4n kohtaavat maahanmuuttajataustaisia
-    asiakkaita.\r\nhttps://vuoksi.fi/tyohon/kansainvalisyyspalvelut/"
+  m_text: "Vuoksi tarjoaa neuvontaa maahan muuttaneille, ty\xF6nantajille ja yrityksille
+    mm. kotoutumiseen, suomen kielen oppimiseen ja kansainv\xE4liseen rekrytointiin
+    liittyen. https://vuoksi.fi/tyohon/kansainvalisyyspalvelut/\n\nMaahanmuuttokoordinaattori
+    Agnes Szeman\n 040 641 6374\n agnes.szeman@vuoksi.fi"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 953dc18794b4ed14587346cc6d05e072, type: 2}
   m_sharedMaterial: {fileID: 2897510219830089573, guid: 953dc18794b4ed14587346cc6d05e072, type: 2}
