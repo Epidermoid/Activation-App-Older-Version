@@ -65,11 +65,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Suupohjan alueen kunnat Isojoki, Karijoki, Kauhajoki, Kristiinankaupunki,
-    Kurikka ja Teuva muodostavat Suupohjan ty\xF6llisyysalueen. Ty\xF6llisyysalueen
-    ty\xF6voimapalveluiden j\xE4rjest\xE4j\xE4n\xE4 toimii Suupohjan koulutus- ja
-    ty\xF6llisyyskuntayhtym\xE4 Vuoksi.\r\n\r\nHenkil\xF6asiakaspalvelu: 040 5478
-    375, ma-pe klo 9.00\u201315.00\r\ntyollisyysalue@vuoksi.fi\r\npuh. 040 5478 375\r\n"
+  m_text: "Suupohjan ty\xF6llisyysalueeseen kuuluvat Isojoki, Karijoki, Kauhajoki,
+    Kristiinankaupunki, Kurikka ja Teuva. Ty\xF6voimapalveluista vastaa Vuoksi.\n\nHenkil\xF6asiakaspalvelu:
+    040 5478 375 (ma\u2013pe 9\u201315)\n tyollisyysalue@vuoksi.fi\n\nTy\xF6nantajat
+    ja yritykset: 040 5652 085\n\nViranomaislinja: 040 5643 553 (vain puhelut, ei
+    tekstiviestej\xE4)\n viranomaislinja@vuoksi.fi\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 953dc18794b4ed14587346cc6d05e072, type: 2}
   m_sharedMaterial: {fileID: 2897510219830089573, guid: 953dc18794b4ed14587346cc6d05e072, type: 2}

@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
 
     public static AudioManager Instance;
+    public Slider slider;
 
     [SerializeField] public static AudioSource audioSource;
     [SerializeField] public static AudioClip[] clips;
@@ -29,11 +31,10 @@ public class AudioManager : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         clips = rclips;
     }
-
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        
+        audioSource.volume = PlayerPrefs.GetFloat("Vol", 1);
+        slider.value = PlayerPrefs.GetFloat("Vol", 1); 
     }
 
     public static void PlayPop()
@@ -44,4 +45,9 @@ public class AudioManager : MonoBehaviour
     }
 
 
+    public void ChangeVolume(float vol)
+    {
+        audioSource.volume = vol;
+        PlayerPrefs.SetFloat("Vol", vol);
+    }
 }

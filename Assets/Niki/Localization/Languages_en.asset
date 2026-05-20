@@ -86,6 +86,119 @@ MonoBehaviour:
     m_Localized: Find a cloudberry
     m_Metadata:
       m_Items: []
+  - m_Id: 366009677082624
+    m_Localized: Search...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 366789259784192
+    m_Localized: Cafes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 367020693090304
+    m_Localized: Education
+    m_Metadata:
+      m_Items: []
+  - m_Id: 367158748606464
+    m_Localized: Employment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 367356803641344
+    m_Localized: Documentation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 367539801124864
+    m_Localized: Shops
+    m_Metadata:
+      m_Items: []
+  - m_Id: 367686673068032
+    m_Localized: Health
+    m_Metadata:
+      m_Items: []
+  - m_Id: 369975932579840
+    m_Localized: 'Address: Opettajantie 1
+
+      Business hours:
+
+      Mon-Fri 8.30-14.15'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370553614069760
+    m_Localized: Route
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372571950903296
+    m_Localized: Employment area info point
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373785564377088
+    m_Localized: "Address: Opettajantie 1\nBusiness hours:\nMon-Fri 9.00\u201315.00\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 377716520611840
+    m_Localized: International Services
+    m_Metadata:
+      m_Items: []
+  - m_Id: 378551954665472
+    m_Localized: "Address: Opettajantie 1\nBusiness hours:\nMon-Fri 6.00\u201316.00\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382240962473984
+    m_Localized: 'Address: Puistotie 60
+
+      Business hours: 8:00 - 21:00
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 387045499957248
+    m_Localized: "Address:  Pr\xE4nn\xE4rintie 8\nBusiness hours: 8:00 - 17:30"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390752748793856
+    m_Localized: Audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 430910730760192
+    m_Localized: Additional information and links
+    m_Metadata:
+      m_Items: []
+  - m_Id: 431532683128832
+    m_Localized: Too far away!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 431681606086656
+    m_Localized: Play Minigame
+    m_Metadata:
+      m_Items: []
+  - m_Id: 432053414359040
+    m_Localized: Write the code
+    m_Metadata:
+      m_Items: []
+  - m_Id: 434754164453376
+    m_Localized: "Back \nto Map"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 434974201835520
+    m_Localized: FIND THE BERRIES
+    m_Metadata:
+      m_Items: []
+  - m_Id: 435227751706624
+    m_Localized: Found all berries!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 435394865360896
+    m_Localized: This minigame can be played only once per day, are you sure you
+      want to exit?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 435682779164672
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 435778056974336
+    m_Localized: Yes
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
