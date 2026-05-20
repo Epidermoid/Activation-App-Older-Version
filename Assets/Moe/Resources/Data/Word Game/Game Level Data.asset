@@ -16,8 +16,4 @@ MonoBehaviour:
   - catagoryName: Cafe
     itsBadge: 1
     boardData:
-    - {fileID: 11400000, guid: 158906255e3b95f45b0536fb8cf0524e, type: 2}
-  - catagoryName: Test
-    itsBadge: 1
-    boardData:
     - {fileID: 11400000, guid: 45d808109db19c841be5b643671b1bec, type: 2}
