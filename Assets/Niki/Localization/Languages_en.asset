@@ -199,6 +199,44 @@ MonoBehaviour:
     m_Localized: Yes
     m_Metadata:
       m_Items: []
+  - m_Id: 758857798873088
+    m_Localized: The cafe sells coffee and various soft drinks, also some salty and
+      sweet snacks.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 761345482518528
+    m_Localized: "Suupohja's employment area includes Isojoki, Karijoki, Kauhajoki,
+      Kristiinankaupunki, Kurikka and Teuva. Emplayment services provided by Vuoksi.\n\nPrivate
+      customer service: 040 5478 375 (mon\u2013fri 9\u201315)\n tyollisyysalue@vuoksi.fi\n\nEmplayers
+      and companies: 040 5652 085\n\nAuthority line: 040 5643 553 (only calls, no
+      text messages)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 763615834107904
+    m_Localized: "Vuoksi offers advice for immigrants, employers and businesses in
+      regards to, integration, learning the finnish language, international recruitment
+      and more.\nhttps://vuoksi.fi/tyohon/kansainvalisyyspalvelut/\n\nMaahanmuuttokoordinaattori
+      Agnes Szeman\n 040 641 6374\n agnes.szeman@vuoksi.fi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 764662195515392
+    m_Localized: "Kauhajoki's clothes bank is a free recycling point, where one can
+      get childrens', teens' and adults' clothing, practice equipment and home textiles.
+      Donations are to be recieved in good condition and clean. The clothes bank
+      operates from Vuoksi's B-building's Tekomo.\n\nFacebook: https://www.facebook.com/people/Momssit-Kauhajoki/61577383570980/\n
+      Instagram: https://www.instagram.com/momssit_kauhajoki"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 768067513184256
+    m_Localized: 'Emplayment area
+
+      info point'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 768366663528448
+    m_Localized: Health centre
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

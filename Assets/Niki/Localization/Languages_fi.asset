@@ -199,6 +199,43 @@ MonoBehaviour:
     m_Localized: "Kyll\xE4"
     m_Metadata:
       m_Items: []
+  - m_Id: 758857798873088
+    m_Localized: "Kahvilassa on myynniss\xE4 kahvia, teet\xE4 sek\xE4 erilaisia virvoitusjuomia
+      sek\xE4 suolaista ja makeaa sy\xF6t\xE4v\xE4\xE4."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 761345482518528
+    m_Localized: "Suupohjan ty\xF6llisyysalueeseen kuuluvat Isojoki, Karijoki, Kauhajoki,
+      Kristiinankaupunki, Kurikka ja Teuva. Ty\xF6voimapalveluista vastaa Vuoksi.\n\nHenkil\xF6asiakaspalvelu:
+      040 5478 375 (ma\u2013pe 9\u201315)\n tyollisyysalue@vuoksi.fi\n\nTy\xF6nantajat
+      ja yritykset: 040 5652 085\n\nViranomaislinja: 040 5643 553 (vain puhelut,
+      ei tekstiviestej\xE4)\n viranomaislinja@vuoksi.fi\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 763615834107904
+    m_Localized: "Vuoksi tarjoaa neuvontaa maahan muuttaneille, ty\xF6nantajille
+      ja yrityksille mm. kotoutumiseen, suomen kielen oppimiseen ja kansainv\xE4liseen
+      rekrytointiin liittyen. https://vuoksi.fi/tyohon/kansainvalisyyspalvelut/\n\nMaahanmuuttokoordinaattori
+      Agnes Szeman\n 040 641 6374\n agnes.szeman@vuoksi.fi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 764662195515392
+    m_Localized: "Kauhajoen Vaatepankki on ilmainen kierr\xE4tyspiste, josta voi
+      hakea lasten, nuorten ja aikuisten vaatteita, harrastusv\xE4lineit\xE4 ja kodin
+      tekstiilej\xE4. Lahjoituksena otetaan vastaan hyv\xE4kuntoisia ja puhtaita
+      tavaroita. Vaatepankki toimii Vuoksin B-rakennuksen Tekomossa.\n\nFacebook:
+      https://www.facebook.com/people/Momssit-Kauhajoki/61577383570980/\n Instagram:
+      https://www.instagram.com/momssit_kauhajoki"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 768067513184256
+    m_Localized: "Ty\xF6llisyysalueen\ninfopiste"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 768366663528448
+    m_Localized: Terveyskeskus
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
