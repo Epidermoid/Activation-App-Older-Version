@@ -929,7 +929,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1051996654173535340, guid: ba8c0ef9f8bb9314b978013d6281b4ad, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2278670038399132189, guid: ba8c0ef9f8bb9314b978013d6281b4ad, type: 3}
       propertyPath: m_Type
@@ -941,7 +941,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: a78bff1432d480349a46f0b2756818df, type: 3}
     - target: {fileID: 4551314866219986889, guid: ba8c0ef9f8bb9314b978013d6281b4ad, type: 3}
       propertyPath: m_text
-      value: Valmis
+      value: "Takaisin\nkarttan\xE4kym\xE4\xE4n"
       objectReference: {fileID: 0}
     - target: {fileID: 4551314866219986889, guid: ba8c0ef9f8bb9314b978013d6281b4ad, type: 3}
       propertyPath: m_fontSize
@@ -980,6 +980,10 @@ PrefabInstance:
       value: 4288629517
       objectReference: {fileID: 0}
     - target: {fileID: 4551314866219986889, guid: ba8c0ef9f8bb9314b978013d6281b4ad, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 4551314866219986889, guid: ba8c0ef9f8bb9314b978013d6281b4ad, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
@@ -1013,7 +1017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6870757686782614358, guid: ba8c0ef9f8bb9314b978013d6281b4ad, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 200
+      value: 287.72
       objectReference: {fileID: 0}
     - target: {fileID: 6870757686782614358, guid: ba8c0ef9f8bb9314b978013d6281b4ad, type: 3}
       propertyPath: m_LocalScale.x
@@ -1061,7 +1065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6870757686782614358, guid: ba8c0ef9f8bb9314b978013d6281b4ad, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 147.90002
+      value: 138
       objectReference: {fileID: 0}
     - target: {fileID: 6870757686782614358, guid: ba8c0ef9f8bb9314b978013d6281b4ad, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

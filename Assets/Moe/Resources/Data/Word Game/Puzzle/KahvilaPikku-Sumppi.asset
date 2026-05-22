@@ -13,116 +13,100 @@ MonoBehaviour:
   m_Name: KahvilaPikku-Sumppi
   m_EditorClassIdentifier: 
   timeInSeconds: 0
-  Columns: 9
-  Rows: 9
+  Columns: 7
+  Rows: 10
   Board:
-  - Size: 9
+  - Size: 10
     Row:
-    - H
+    - V
+    - E
+    - S
+    - I
+    - P
+    - I
+    - S
     - T
-    - W
-    - Q
-    - J
+    - E
+    - Z
+  - Size: 10
+    Row:
+    - Z
     - B
-    - N
-    - M
-    - V
-  - Size: 9
-    Row:
-    - V
     - K
-    - E
-    - G
-    - L
-    - O
-    - P
-    - A
-    - E
-  - Size: 9
-    Row:
-    - O
+    - B
     - U
-    - N
-    - K
-    - U
-    - P
-    - P
-    - I
     - S
-  - Size: 9
-    Row:
-    - I
-    - I
-    - M
-    - A
-    - S
-    - E
-    - E
-    - T
-    - I
-  - Size: 9
-    Row:
-    - L
-    - T
-    - U
+    - V
     - H
-    - I
-    - C
-    - L
-    - O
-    - P
-  - Size: 9
-    Row:
-    - E
-    - T
-    - F
-    - V
-    - K
-    - K
-    - I
-    - E
-    - I
-  - Size: 9
-    Row:
-    - I
-    - I
     - D
-    - I
     - K
-    - Y
-    - M
-    - M
-    - S
-  - Size: 9
+  - Size: 10
     Row:
-    - P
-    - U
-    - L
-    - L
+    - G
+    - I
     - A
-    - K
+    - N
+    - L
+    - I
+    - M
     - S
+    - A
+    - U
+  - Size: 10
+    Row:
+    - T
+    - Y
+    - H
+    - W
+    - L
+    - K
+    - U
+    - P
+    - P
+    - I
+  - Size: 10
+    Row:
+    - I
+    - N
+    - V
+    - U
+    - A
     - I
     - T
-  - Size: 9
+    - N
+    - T
+    - T
+  - Size: 10
     Row:
-    - "\xC4"
-    - A
-    - J
-    - A
-    - I
+    - V
     - O
-    - A
     - I
+    - L
     - E
+    - I
+    - P
+    - "\xC4"
+    - E
+    - T
+  - Size: 10
+    Row:
+    - L
+    - U
+    - S
+    - I
+    - K
+    - K
+    - A
+    - L
+    - E
+    - I
   SearchWords:
-  - Word: "VOILEIP\xC4"
-  - Word: PULLA
   - Word: KAHVI
   - Word: KUITTI
   - Word: LIMSA
-  - Word: KUPPI
-  - Word: LUSIKKA
-  - Word: TEE
   - Word: VESIPISTE
-  - Word: MAITO
+  - Word: LUSIKKA
+  - Word: "VOILEIP\xC4"
+  - Word: PULLA
+  - Word: KUPPI
+  - Word: TEE
