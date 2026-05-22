@@ -346,6 +346,7 @@ public class MenuManager : MonoBehaviour
     {
         AudioManager.PlayPop();
 
+        // when you have enough money
         if (PlayerPrefs.GetInt("Berry", 0) >= 1000)
         {
             unlock.SetActive(false);
@@ -361,6 +362,8 @@ public class MenuManager : MonoBehaviour
 
             customizeManager.equipBigAvatar.GetComponent<Image>().color = litUp;
         }
+        
+        // when you dont have enough money
         else if (PlayerPrefs.GetInt("Berry", 0) < 1000)
         {
 
